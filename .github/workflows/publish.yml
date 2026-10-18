@@ -1,0 +1,42 @@
+name: 인스타그램 게시
+
+on:
+  workflow_dispatch:
+    inputs:
+      folder:
+        description: "게시물 폴더 (예: posts/no01)"
+        required: true
+        default: "posts/no01"
+      publish:
+        description: "게시하기 (체크하지 않으면 점검만 해요)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 점검 또는 게시
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: |
+          if [ "${{ inputs.publish }}" = "true" ]; then
+            python scripts/publish.py "${{ inputs.folder }}" --publish
+          else
+            python scripts/publish.py "${{ inputs.folder }}"
+          fi
+      - name: 게시 기록 저장
+        if: ${{ inputs.publish }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add "${{ inputs.folder }}/posted.txt"
+          git commit -m "게시 완료: ${{ inputs.folder }}"
+          git push
