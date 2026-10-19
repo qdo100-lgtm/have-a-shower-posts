@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-19 05:33 UTC",
+  "account": {
+    "username": "have.a.shower",
+    "account_type": "MEDIA_CREATOR",
+    "followers_count": 0,
+    "follows_count": 0,
+    "media_count": 1,
+    "id": "28752046457769379"
+  },
+  "media": [
+    {
+      "id": "18002262542806170",
+      "caption": "잠이 안 오는 밤, 샤워 시간부터 바꿔보세요 🌙\n\n자기",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-10-19T01:18:00+0000",
+      "permalink": "https://www.instagram.com/p/DeqDzd7Ed83/",
+      "like_count": 0,
+      "comments_count": 0,
+      "insights": {
+        "views": 0,
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      }
+    }
+  ]
+}
