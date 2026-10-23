@@ -1,14 +1,46 @@
 {
-  "checked_at": "2026-10-20 23:48 UTC",
+  "checked_at": "2026-10-23 06:57 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
-    "followers_count": 1,
+    "followers_count": 2,
     "follows_count": 0,
-    "media_count": 3,
+    "media_count": 5,
     "id": "28752046457769379"
   },
   "media": [
+    {
+      "id": "18078347867428243",
+      "caption": "날 추워지면 올라오는 각질, 박박 밀면 더 생겨요 ❄️",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-10-22T10:04:06+0000",
+      "permalink": "https://www.instagram.com/p/DeyuZMGm7Nd/",
+      "like_count": 1,
+      "comments_count": 0,
+      "insights": {
+        "views": 3,
+        "reach": 2,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 1
+      }
+    },
+    {
+      "id": "18441775939179502",
+      "caption": "지금 내가 쓰는 샤워볼이 변기보다 더럽다고? 🧽\n\n샤워",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-10-21T04:59:24+0000",
+      "permalink": "https://www.instagram.com/p/Devmu1gFfkr/",
+      "like_count": 2,
+      "comments_count": 0,
+      "insights": {
+        "views": 8,
+        "reach": 3,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 2
+      }
+    },
     {
       "id": "18117573149046662",
       "caption": "샤워 10분 넘기면, 피부 이렇게 돼요 🚿\n\n뜨끈하게 ",
@@ -18,8 +50,8 @@
       "like_count": 2,
       "comments_count": 0,
       "insights": {
-        "views": 10,
-        "reach": 2,
+        "views": 14,
+        "reach": 3,
         "saved": 0,
         "shares": 0,
         "total_interactions": 2
@@ -34,8 +66,8 @@
       "like_count": 2,
       "comments_count": 0,
       "insights": {
-        "views": 5,
-        "reach": 2,
+        "views": 6,
+        "reach": 3,
         "saved": 0,
         "shares": 0,
         "total_interactions": 2
@@ -50,8 +82,8 @@
       "like_count": 3,
       "comments_count": 0,
       "insights": {
-        "views": 7,
-        "reach": 3,
+        "views": 8,
+        "reach": 4,
         "saved": 0,
         "shares": 0,
         "total_interactions": 3
