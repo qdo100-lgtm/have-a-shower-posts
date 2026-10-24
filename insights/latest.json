@@ -1,14 +1,30 @@
 {
-  "checked_at": "2026-10-23 06:57 UTC",
+  "checked_at": "2026-10-24 05:03 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
     "followers_count": 2,
     "follows_count": 0,
-    "media_count": 5,
+    "media_count": 6,
     "id": "28752046457769379"
   },
   "media": [
+    {
+      "id": "18117878638800079",
+      "caption": "매일 쓰는 수건, 3번 이상 쓰고 있나요? 🧺\n\n샤워하",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-10-23T07:39:23+0000",
+      "permalink": "https://www.instagram.com/p/De1CoJ5G0k_/",
+      "like_count": 1,
+      "comments_count": 0,
+      "insights": {
+        "views": 3,
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 1
+      }
+    },
     {
       "id": "18078347867428243",
       "caption": "날 추워지면 올라오는 각질, 박박 밀면 더 생겨요 ❄️",
@@ -18,7 +34,7 @@
       "like_count": 1,
       "comments_count": 0,
       "insights": {
-        "views": 3,
+        "views": 6,
         "reach": 2,
         "saved": 0,
         "shares": 0,
