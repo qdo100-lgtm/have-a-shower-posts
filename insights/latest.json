@@ -1,28 +1,44 @@
 {
-  "checked_at": "2026-10-24 05:03 UTC",
+  "checked_at": "2026-10-27 06:46 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
     "followers_count": 2,
     "follows_count": 0,
-    "media_count": 6,
+    "media_count": 7,
     "id": "28752046457769379"
   },
   "media": [
+    {
+      "id": "18198146263389438",
+      "caption": "8달러 목욕물 비누가 725달러에 팔린 이유 🛁🧼\n\n할",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-10-26T09:16:00+0000",
+      "permalink": "https://www.instagram.com/p/De88EiUm0Y0/",
+      "like_count": 2,
+      "comments_count": 0,
+      "insights": {
+        "views": 4,
+        "reach": 2,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 2
+      }
+    },
     {
       "id": "18117878638800079",
       "caption": "매일 쓰는 수건, 3번 이상 쓰고 있나요? 🧺\n\n샤워하",
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-10-23T07:39:23+0000",
       "permalink": "https://www.instagram.com/p/De1CoJ5G0k_/",
-      "like_count": 1,
+      "like_count": 3,
       "comments_count": 0,
       "insights": {
-        "views": 3,
-        "reach": 1,
+        "views": 7,
+        "reach": 3,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 1
+        "total_interactions": 3
       }
     },
     {
@@ -31,14 +47,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-10-22T10:04:06+0000",
       "permalink": "https://www.instagram.com/p/DeyuZMGm7Nd/",
-      "like_count": 1,
+      "like_count": 3,
       "comments_count": 0,
       "insights": {
-        "views": 6,
-        "reach": 2,
+        "views": 11,
+        "reach": 4,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 1
+        "total_interactions": 3
       }
     },
     {
@@ -47,14 +63,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-10-21T04:59:24+0000",
       "permalink": "https://www.instagram.com/p/Devmu1gFfkr/",
-      "like_count": 2,
+      "like_count": 3,
       "comments_count": 0,
       "insights": {
-        "views": 8,
-        "reach": 3,
+        "views": 11,
+        "reach": 4,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 2
+        "total_interactions": 3
       }
     },
     {
@@ -63,14 +79,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-10-20T09:20:11+0000",
       "permalink": "https://www.instagram.com/p/Detfy8ZE9Li/",
-      "like_count": 2,
+      "like_count": 3,
       "comments_count": 0,
       "insights": {
-        "views": 14,
-        "reach": 3,
+        "views": 17,
+        "reach": 4,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 2
+        "total_interactions": 3
       }
     },
     {
@@ -79,14 +95,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-10-19T13:51:32+0000",
       "permalink": "https://www.instagram.com/p/DeraDkXk3IT/",
-      "like_count": 2,
+      "like_count": 3,
       "comments_count": 0,
       "insights": {
-        "views": 6,
-        "reach": 3,
+        "views": 9,
+        "reach": 4,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 2
+        "total_interactions": 3
       }
     },
     {
@@ -95,14 +111,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-10-19T08:37:05+0000",
       "permalink": "https://www.instagram.com/p/Deq2DanFZtC/",
-      "like_count": 3,
+      "like_count": 4,
       "comments_count": 0,
       "insights": {
-        "views": 8,
-        "reach": 4,
+        "views": 10,
+        "reach": 5,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 3
+        "total_interactions": 4
       }
     }
   ]
