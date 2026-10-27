@@ -49,6 +49,10 @@ def main():
     if os.path.exists(os.path.join(folder, "posted.txt")):
         sys.exit(f"{folder} 는 이미 게시됐어요 (posted.txt 있음). 다시 올리려면 posted.txt를 지우세요.")
 
+    reel = os.path.join(folder, "reel.mp4")
+    if os.path.exists(reel):
+        return publish_reel(folder, reel, publish)
+
     images = sorted(glob.glob(os.path.join(folder, "*.jpg")) + glob.glob(os.path.join(folder, "*.jpeg")))
     if not 2 <= len(images) <= 10:
         sys.exit(f"캐러셀은 사진 2~10장이 필요해요. 지금 {len(images)}장이에요.")
@@ -105,6 +109,52 @@ def main():
     if first_comment:
         call("POST", f"{mid}/comments", {"message": first_comment})
         print("첫 댓글 완료")
+    with open(os.path.join(folder, "posted.txt"), "w", encoding="utf-8") as f:
+        f.write(f"media_id: {mid}\nlink: {link}\nposted_at: {time.strftime('%Y-%m-%d %H:%M:%S UTC', time.gmtime())}\n")
+
+
+def publish_reel(folder, reel, publish):
+    """릴스(영상 1개) 게시. 폴더에 reel.mp4 + caption.txt, 선택으로 thumb_ms.txt(표지 위치, 밀리초)."""
+    caption = open(os.path.join(folder, "caption.txt"), encoding="utf-8").read().strip()
+    if len(caption) > 2200:
+        sys.exit(f"캡션이 너무 길어요 ({len(caption)}자, 최대 2200자).")
+    if caption.count("#") > 30:
+        sys.exit("해시태그는 최대 30개예요.")
+    tpath = os.path.join(folder, "thumb_ms.txt")
+    thumb = open(tpath).read().strip() if os.path.exists(tpath) else ""
+    repo = os.environ["GITHUB_REPOSITORY"]
+    sha = os.environ["GITHUB_SHA"]
+    url = f"https://raw.githubusercontent.com/{repo}/{sha}/{urllib.parse.quote(reel)}"
+
+    me = call("GET", "me", {"fields": "user_id,username"})
+    ig_id = me.get("user_id") or me.get("id")
+    print(f"계정: @{me.get('username')}")
+    status, ctype = check_url(url)
+    print(f"릴스 영상: {status} {ctype} {url}")
+    if status != 200:
+        sys.exit("영상 주소를 열 수 없어요.")
+    print("\n----- 캡션 -----\n" + caption + "\n----------------")
+    if not publish:
+        print("\n점검만 했어요. 실제로 올리려면 '게시하기'를 체크하고 다시 실행하세요.")
+        return
+
+    params = {"media_type": "REELS", "video_url": url, "caption": caption, "share_to_feed": "true"}
+    if thumb:
+        params["thumb_offset"] = thumb
+    cid = call("POST", f"{ig_id}/media", params)["id"]
+    for _ in range(60):
+        st = call("GET", cid, {"fields": "status_code,status"})
+        print("상태:", st.get("status_code"), st.get("status", ""))
+        if st.get("status_code") == "FINISHED":
+            break
+        if st.get("status_code") in ("ERROR", "EXPIRED"):
+            sys.exit("인스타그램에서 영상 처리에 실패했어요: " + str(st.get("status")))
+        time.sleep(10)
+    else:
+        sys.exit("영상 처리가 너무 오래 걸려요. 잠시 후 다시 실행해 주세요.")
+    mid = call("POST", f"{ig_id}/media_publish", {"creation_id": cid})["id"]
+    link = call("GET", mid, {"fields": "permalink"}).get("permalink", "")
+    print("게시 완료:", link)
     with open(os.path.join(folder, "posted.txt"), "w", encoding="utf-8") as f:
         f.write(f"media_id: {mid}\nlink: {link}\nposted_at: {time.strftime('%Y-%m-%d %H:%M:%S UTC', time.gmtime())}\n")
 
