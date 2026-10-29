@@ -27,11 +27,21 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
         run: |
+          set -o pipefail
           if [ "${{ inputs.publish }}" = "true" ]; then
-            python scripts/publish.py "${{ inputs.folder }}" --publish
+            python scripts/publish.py "${{ inputs.folder }}" --publish 2>&1 | tee run.log
           else
-            python scripts/publish.py "${{ inputs.folder }}"
+            python scripts/publish.py "${{ inputs.folder }}" 2>&1 | tee run.log
           fi
+      - name: 오류 기록 저장
+        if: ${{ failure() }}
+        run: |
+          grep -v "^  200" run.log | tail -40 > last_error.txt
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add last_error.txt
+          git commit -m "게시 오류 기록"
+          git push
       - name: 게시 기록 저장
         if: ${{ inputs.publish }}
         run: |
