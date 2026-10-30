@@ -1,14 +1,30 @@
 {
-  "checked_at": "2026-10-29 08:07 UTC",
+  "checked_at": "2026-10-30 04:45 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
     "followers_count": 5,
     "follows_count": 0,
-    "media_count": 8,
+    "media_count": 9,
     "id": "28752046457769379"
   },
   "media": [
+    {
+      "id": "18469161802139054",
+      "caption": "장원영은 1시간 씻는다는데, 피부 괜찮을까? 🛁\n\n공연",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-10-29T08:08:16+0000",
+      "permalink": "https://www.instagram.com/p/DfEitN9FUoE/",
+      "like_count": 4,
+      "comments_count": 0,
+      "insights": {
+        "views": 8,
+        "reach": 5,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4
+      }
+    },
     {
       "id": "17889950169687174",
       "caption": "제니가 쓰는 바디로션, 이거였어요 🫧\n\n올해 바세린 바",
@@ -50,8 +66,8 @@
       "like_count": 5,
       "comments_count": 0,
       "insights": {
-        "views": 19,
-        "reach": 5,
+        "views": 21,
+        "reach": 6,
         "saved": 0,
         "shares": 0,
         "total_interactions": 5
@@ -63,14 +79,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-10-22T10:04:06+0000",
       "permalink": "https://www.instagram.com/p/DeyuZMGm7Nd/",
-      "like_count": 5,
+      "like_count": 6,
       "comments_count": 0,
       "insights": {
-        "views": 21,
-        "reach": 6,
-        "saved": 0,
+        "views": 24,
+        "reach": 8,
+        "saved": 1,
         "shares": 0,
-        "total_interactions": 5
+        "total_interactions": 7
       }
     },
     {
@@ -82,8 +98,8 @@
       "like_count": 5,
       "comments_count": 0,
       "insights": {
-        "views": 21,
-        "reach": 6,
+        "views": 22,
+        "reach": 7,
         "saved": 0,
         "shares": 0,
         "total_interactions": 5
