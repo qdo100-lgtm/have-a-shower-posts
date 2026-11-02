@@ -1,0 +1,47 @@
+name: 스레드 게시
+
+on:
+  workflow_dispatch:
+    inputs:
+      folder:
+        description: "게시물 폴더 (예: posts/no10_missed_spots). 토큰 확인만 하려면 check"
+        required: true
+        default: "check"
+      publish:
+        description: "게시하기 (체크하지 않으면 점검만 해요)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  threads:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 점검 또는 게시
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+        run: |
+          set -o pipefail
+          if [ "${{ inputs.folder }}" = "check" ]; then
+            python scripts/threads.py x --check-token 2>&1 | tee run.log
+          elif [ "${{ inputs.publish }}" = "true" ]; then
+            python scripts/threads.py "${{ inputs.folder }}" --publish 2>&1 | tee run.log
+          else
+            python scripts/threads.py "${{ inputs.folder }}" 2>&1 | tee run.log
+          fi
+      - name: 기록 저장
+        if: ${{ always() }}
+        run: |
+          tail -40 run.log > threads_last.txt
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add threads_last.txt
+          if [ -f "${{ inputs.folder }}/threads_posted.txt" ]; then git add "${{ inputs.folder }}/threads_posted.txt"; fi
+          git commit -m "스레드 실행 기록" || true
+          git push
