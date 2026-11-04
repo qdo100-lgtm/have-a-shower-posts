@@ -1,14 +1,30 @@
 {
-  "checked_at": "2026-10-30 04:45 UTC",
+  "checked_at": "2026-11-04 08:13 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
     "followers_count": 5,
     "follows_count": 0,
-    "media_count": 9,
+    "media_count": 10,
     "id": "28752046457769379"
   },
   "media": [
+    {
+      "id": "18133770818507481",
+      "caption": "매일 씻어도 다들 놓치는 이 3곳 🫧\n\n미국 조지워싱턴",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-02T07:45:57+0000",
+      "permalink": "https://www.instagram.com/p/DfOzVxTG202/",
+      "like_count": 3,
+      "comments_count": 0,
+      "insights": {
+        "views": 14,
+        "reach": 4,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 3
+      }
+    },
     {
       "id": "18469161802139054",
       "caption": "장원영은 1시간 씻는다는데, 피부 괜찮을까? 🛁\n\n공연",
