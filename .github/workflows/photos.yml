@@ -26,6 +26,7 @@ jobs:
           python-version: "3.12"
       - name: 사진 받기
         env:
+          PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
           PEXELS_KEY: ${{ secrets.PEXELS_KEY }}
         run: |
           if [ -n "${{ inputs.file }}" ]; then

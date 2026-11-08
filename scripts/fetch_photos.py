@@ -1,12 +1,12 @@
-"""Pexels에서 표지용 배경 사진을 받아와요.
+"""표지용 배경 사진을 무료 사진 사이트에서 받아와요.
 
+키가 있는 사이트를 씀: PIXABAY_KEY(우선) 또는 PEXELS_KEY.
 사용법: python scripts/fetch_photos.py briefs/images/2026-11-08/queries.txt
 
 queries.txt 형식 (한 줄에 하나, # 은 메모):
     sauna | finnish sauna wooden
-    mist  | perfume mist winter knit
 
-결과: 같은 폴더에 sauna_1.jpg, sauna_2.jpg ... 와 credits.txt(사진작가·원본 링크)
+결과: 같은 폴더에 sauna_1.jpg ... 와 credits.txt(사진작가·원본 링크)
 """
 import json
 import os
@@ -16,19 +16,37 @@ import urllib.request
 from pathlib import Path
 
 PER_QUERY = 3
-API = "https://api.pexels.com/v1/search"
 
 
-def get(url, key):
-    req = urllib.request.Request(url, headers={"Authorization": key, "User-Agent": "have-a-shower-photos"})
+def get(url, headers=None):
+    req = urllib.request.Request(url, headers={"User-Agent": "have-a-shower-photos", **(headers or {})})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read()
 
 
+def search_pixabay(query, key):
+    params = urllib.parse.urlencode({"key": key, "q": query, "image_type": "photo",
+                                     "orientation": "vertical", "per_page": PER_QUERY, "safesearch": "true"})
+    hits = json.loads(get(f"https://pixabay.com/api/?{params}")).get("hits", [])
+    return [(h["largeImageURL"], h["user"], h["pageURL"], {}) for h in hits[:PER_QUERY]]
+
+
+def search_pexels(query, key):
+    params = urllib.parse.urlencode({"query": query, "orientation": "portrait", "per_page": PER_QUERY})
+    auth = {"Authorization": key}
+    photos = json.loads(get(f"https://api.pexels.com/v1/search?{params}", auth)).get("photos", [])
+    return [(p["src"]["large2x"], p["photographer"], p["url"], auth) for p in photos]
+
+
 def main():
-    key = os.environ.get("PEXELS_KEY", "").strip()
-    if not key:
-        print("PEXELS_KEY 가 아직 없어요. 저장소 Settings → Secrets 에 넣어 주세요. (이번엔 건너뜀)")
+    pixabay = os.environ.get("PIXABAY_KEY", "").strip()
+    pexels = os.environ.get("PEXELS_KEY", "").strip()
+    if pixabay:
+        site, search, key = "Pixabay", search_pixabay, pixabay
+    elif pexels:
+        site, search, key = "Pexels", search_pexels, pexels
+    else:
+        print("사진 사이트 키가 아직 없어요. 저장소 Settings → Secrets 에 PIXABAY_KEY 를 넣어 주세요. (이번엔 건너뜀)")
         return
     qfile = Path(sys.argv[1])
     folder = qfile.parent
@@ -38,17 +56,14 @@ def main():
         if not line or "|" not in line:
             continue
         name, query = [s.strip() for s in line.split("|", 1)]
-        params = urllib.parse.urlencode({"query": query, "orientation": "portrait", "per_page": PER_QUERY})
-        data = json.loads(get(f"{API}?{params}", key))
-        photos = data.get("photos", [])
-        print(f"{name}: '{query}' → {len(photos)}장")
-        for i, p in enumerate(photos, 1):
+        results = search(query, key)
+        print(f"{name}: '{query}' → {len(results)}장 ({site})")
+        for i, (url, author, page, headers) in enumerate(results, 1):
             out = folder / f"{name}_{i}.jpg"
             if out.exists():
                 continue
-            # portrait = 800x1200, large2x = 원본 비율 고화질
-            out.write_bytes(get(p["src"]["large2x"], key))
-            credits.append(f"{out.name}\t{p['photographer']}\t{p['url']}")
+            out.write_bytes(get(url, headers))
+            credits.append(f"{out.name}\t{site}\t{author}\t{page}")
     if credits:
         with open(folder / "credits.txt", "a", encoding="utf-8") as f:
             f.write("\n".join(credits) + "\n")
