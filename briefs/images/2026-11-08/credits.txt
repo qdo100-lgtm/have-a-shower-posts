@@ -1,0 +1,6 @@
+sauna_1.jpg	Pixabay	ThMilherou	https://pixabay.com/photos/sauna-heat-drink-take-it-easy-4863340/
+sauna_2.jpg	Pixabay	huumsauna	https://pixabay.com/photos/sauna-sauna-heater-8238837/
+sauna_3.jpg	Pixabay	StockSnap	https://pixabay.com/photos/cup-mug-steaming-smoke-coffee-tea-2619216/
+haircare_1.jpg	Pixabay	OleksandrPidvalnyi	https://pixabay.com/photos/woman-washbasin-bathroom-interior-6881935/
+haircare_2.jpg	Pixabay	u_tw1tef2ci0	https://pixabay.com/photos/woman-wellness-skincare-beauty-8826707/
+haircare_3.jpg	Pixabay	Ylanite	https://pixabay.com/photos/spa-soaps-soap-cubes-lifestyle-8227623/
