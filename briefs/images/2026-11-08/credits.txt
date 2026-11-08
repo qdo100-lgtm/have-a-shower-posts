@@ -4,3 +4,9 @@ sauna_3.jpg	Pixabay	StockSnap	https://pixabay.com/photos/cup-mug-steaming-smoke-
 haircare_1.jpg	Pixabay	OleksandrPidvalnyi	https://pixabay.com/photos/woman-washbasin-bathroom-interior-6881935/
 haircare_2.jpg	Pixabay	u_tw1tef2ci0	https://pixabay.com/photos/woman-wellness-skincare-beauty-8826707/
 haircare_3.jpg	Pixabay	Ylanite	https://pixabay.com/photos/spa-soaps-soap-cubes-lifestyle-8227623/
+product_beyond_1.jpg	https://cdnimage.dailian.co.kr/news/202611/news_1793839850656_1711093_m_1.jpg
+product_beyond_2.jpg	https://cdn.specialtimes.co.kr/news/photo/202611/482220_470560_4210.jpg
+product_beyond_3.jpg	https://cdn.consumerwide.com/news/photo/202611/67304_84108_4044.jpg
+product_beyond_4.jpg	https://www.gukjenews.com/news/articleView.html?idxno=3743480
+product_beyond_5.jpg	https://www.lawissue.co.kr/view.php?ud=202611051332544542204ead0791_12
+product_beyond_6.jpg	https://www.job-post.co.kr/news/articleView.html?idxno=236870
