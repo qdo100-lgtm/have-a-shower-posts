@@ -33,6 +33,26 @@ def call(method, path, params=None):
         sys.exit(f"인스타그램 API 오류 ({path}): {e.code} {body}")
 
 
+def publish_when_ready(ig_id, cid):
+    """FINISHED 직후에도 '아직 준비 안 됨'(9007/2207027)이 올 때가 있어 잠깐 기다렸다 다시 시도해요."""
+    time.sleep(5)
+    for attempt in range(6):
+        params = {"creation_id": cid, "access_token": TOKEN}
+        req = urllib.request.Request(f"{API}/{ig_id}/media_publish",
+                                     data=urllib.parse.urlencode(params).encode(), method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            body = e.read().decode(errors="replace").replace(TOKEN, "***")
+            if "2207027" in body or '"code":9007' in body:
+                print(f"아직 준비 중이라 기다렸다 다시 시도해요 ({attempt + 1}/6)")
+                time.sleep(10)
+                continue
+            sys.exit(f"인스타그램 API 오류 ({ig_id}/media_publish): {e.code} {body}")
+    sys.exit("게시물이 준비되지 않아 올리지 못했어요. 잠시 후 다시 실행해 주세요.")
+
+
 def check_url(u):
     req = urllib.request.Request(u, method="HEAD")
     with urllib.request.urlopen(req, timeout=30) as r:
@@ -102,7 +122,7 @@ def main():
         time.sleep(5)
     else:
         sys.exit("게시물 준비가 너무 오래 걸려요. 잠시 후 다시 실행해 주세요.")
-    media = call("POST", f"{ig_id}/media_publish", {"creation_id": cid})
+    media = publish_when_ready(ig_id, cid)
     mid = media["id"]
     link = call("GET", mid, {"fields": "permalink"}).get("permalink", "")
     print("게시 완료:", link)
