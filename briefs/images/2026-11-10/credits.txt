@@ -8,7 +8,9 @@ collagen_1.jpg	Pixabay	kerdkanno	https://pixabay.com/photos/alternative-medicine
 collagen_2.jpg	Pixabay	congerdesign	https://pixabay.com/photos/bee-pollen-pollen-natural-product-2549125/
 collagen_3.jpg	Pixabay	VincentRS	https://pixabay.com/photos/pills-tablets-vitamins-6516265/
 product_iocell_1.jpg	https://cdnweb01.wikitree.co.kr/webdata/editor/202611/02/202611021002055230.jpg
-product_iocell_2.png	https://khan.co.kr/article/202611021121001
 product_vitalbeauty_1.jpg	https://www.cosinkorea.com/mobile/article.html?no=58059
-product_vitalbeauty_2.jpg	https://www.smarttoday.co.kr/ko-kr/articles/110376
 product_kmj_1.png	https://www.kmjournal.net/news/articleView.html?idxno=14105
+# 메모(11/10): iocell_2(아이오셀 같은 사진 중복), vitalbeauty_2(아모레 로고만) 삭제.
+# product_vitalbeauty_1 은 코스인코리아 워터마크 있음 → 바이탈뷰티 공식 이미지로 바꾸는 게 좋음.
+# product_kmj_1 은 KMJ 기사 삽화(언론사 저작물) → 그대로 쓰지 말고 참고용.
+# 글램디(에이피알)·이세비 에어리 페이스 드링크는 공개된 제품 사진을 못 찾음.
