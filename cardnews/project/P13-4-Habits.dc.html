@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>스타들 발언</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&amp;family=Noto+Sans+KR:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#5F646B}a:hover{color:#17191C}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px; display: flex; flex-direction: column; gap: 40px; background: #F6F2E8; color: #17191C; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; font-weight: 700; letter-spacing: 0.12em">
+<div style="color: {{accent}}">HAVE A SHOWER</div>
+<div style="color: #5F646B; letter-spacing: 0.04em">04 / 05</div>
+</div>
+<h2 style="margin: 0; font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 64px; font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; white-space: pre-line">등드름 막는
+<span style="color: {{accent}}">작은 습관</span></h2>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; gap: 28px; align-items: flex-start; background: #FFFFFF; border-radius: 20px; padding: 36px 40px">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 50px; font-weight: 800; line-height: 1.1; color: {{accent}}; flex-shrink: 0; width: 64px">1</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 40px; font-weight: 700; line-height: 1.35">순한 바디워시</div>
+<div style="font-size: 32px; line-height: 1.55; color: #3A3E44">세정력이 너무 강한 제품은 오히려 피부를 자극해요.</div>
+</div>
+</div>
+<div style="display: flex; gap: 28px; align-items: flex-start; background: #FFFFFF; border-radius: 20px; padding: 36px 40px">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 50px; font-weight: 800; line-height: 1.1; color: {{accent}}; flex-shrink: 0; width: 64px">2</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 40px; font-weight: 700; line-height: 1.35">스크럽은 주 1~2회</div>
+<div style="font-size: 32px; line-height: 1.55; color: #3A3E44">거친 스크럽을 매일 하면 트러블이 더 생길 수 있어요.</div>
+</div>
+</div>
+<div style="display: flex; gap: 28px; align-items: flex-start; background: #FFFFFF; border-radius: 20px; padding: 36px 40px">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 50px; font-weight: 800; line-height: 1.1; color: {{accent}}; flex-shrink: 0; width: 64px">3</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 40px; font-weight: 700; line-height: 1.35">수건·베갯잇 자주 갈기</div>
+<div style="font-size: 32px; line-height: 1.55; color: #3A3E44">수건은 한 번 쓰면 세탁하고, 잠옷과 베갯잇도 자주 바꿔요.</div>
+</div>
+</div>
+</div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 23px; color: #5F646B">
+<div>@have.a.shower</div>
+<div>출처: 얼루어 코리아(2026.7) · 김현준 원장</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1B3FEF","options":["#1B3FEF","#8A4B3C","#3D4F8A","#17191C"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1B3FEF' };
+}
+}
+</script>
+</body>
+</html>
