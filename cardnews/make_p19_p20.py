@@ -68,16 +68,16 @@ C20 = {
     'C': f'근육통 vs {yl("회복")}\n정답이\n달랐어요',
 }
 write('P20-1-Cover.dc.html', '냉탕 온탕 커버',
-      cover(20, '/_blob/6092733fc9fe1049e072d39ca79a9801', '62% 40%', C20[pick.get('20', 'A')]))
+      cover(20, '/_blob/308f20327d5a6478a42089ef495b3b60', '50% 30%', C20[pick.get('20', 'A')]))
 
-def half(emoji, label, temp, bg):
+def half(img, label, pos='50% 50%'):
     return f'''<div style="flex: 1; display: flex; flex-direction: column; gap: 14px">
-<div style="height: 380px; border-radius: 20px; background: {bg}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px"><div style="font-size: 120px; line-height: 1">{emoji}</div><div style="font-family: {GOTHIC}; font-size: 72px; font-weight: 800; color: #FFFFFF">{temp}</div></div>
+<div style="height: 380px; border-radius: 20px; overflow: hidden"><img src="{img}" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: {pos}; display: block"></div>
 <div style="font-family: {GOTHIC}; font-size: 40px; font-weight: 800; text-align: center">{label}</div>
 </div>'''
 
 write('P20-2-Question.dc.html', '질문', page(2, 8, f'운동 끝나고 나는?', f'''
-<div style="display: flex; gap: 24px">{half("❄️", f'A. {acc("얼음물")} 냉탕', "10°C", "#5B8DEF")}{half("♨️", f'B. {acc("뜨끈한")} 온탕', "42°C", "#E8613C")}</div>
+<div style="display: flex; gap: 24px">{half("/_blob/8d385385e355e4c6eee4ad241f609c9b", f'A. {acc("얼음물")} 냉탕')}{half("/_blob/aa885ee38caf06747531b8c4885c95b9", f'B. {acc("뜨끈한")} 온탕', '40% 60%')}</div>
 {bullets(["영국 이스트런던대 연구팀이 활동적인 성인 40명(남 31·여 9)으로 직접 비교했어요", "허벅지 앞 근육이 뻐근해지는 운동을 시킨 뒤, 회복 방법만 달리해서 72시간 지켜봤어요"], 34)}''', S20))
 
 groups = [('❄️', '찬물에 몸 담그기', '10°C'), ('♨️', '따뜻한 물에 몸 담그기', '42°C'),
@@ -103,11 +103,11 @@ write('P20-4-Strength.dc.html', '결과1 근력', page(4, 8, f'결과 ① 힘이
 {bullets(["어떤 방법도 다른 방법보다 근력을 ‘확실히 더 빨리’ 돌려놓지는 못했어요", "찬물 그룹이 숫자로는 조금 낮았지만, 의미 있는 차이로 보기는 어려웠어요"], 36)}''', S20))
 
 write('P20-5-Soreness.dc.html', '결과2 근육통', page(5, 8, f'결과 ② 덜 아픈 느낌은\n{acc("찬물이 1등")}', f'''
-{bigbox("❄️ 찬물 그룹", "느끼는 근육통 ↓ 가장 많이", 76)}
+<div style="height: 360px; border-radius: 20px; overflow: hidden"><img src="/_blob/8d385385e355e4c6eee4ad241f609c9b" alt="얼음물" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; display: block"></div>
 {bullets(["찬물에 담근 그룹이 ‘느끼는 근육통’을 가장 잘 줄였어요", "하지만 몸속 회복 지표(근육 손상·염증)는 찬물에서 좋아지지 않았어요", "아픈 느낌을 줄여 주는 것과, 몸이 회복하는 것은 다를 수 있다는 뜻이에요"], 35)}''', S20))
 
 write('P20-6-Heat.dc.html', '결과3 온열', page(6, 8, f'결과 ③ 몸속 회복 신호는\n{acc("따뜻한 쪽")}이 좋았어요', f'''
-{bigbox("♨️ 42°C 따뜻한 물 그룹", "열충격단백질(HSP72) ↑", 76)}
+<div style="height: 360px; border-radius: 20px; overflow: hidden"><img src="/_blob/aa885ee38caf06747531b8c4885c95b9" alt="김이 나는 온탕" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; display: block"></div>
 {bullets(["온열(따뜻한 물·뜨거운 공기) 그룹이 근육 손상·염증 지표 변화가 더 좋았어요", "42°C 물에 담근 그룹은 ‘열충격단백질(HSP72)’이 더 높았어요. 몸이 열 스트레스에 반응해 세포를 지키려고 만드는 단백질이에요"], 35)}''', S20))
 
 choice = [('오늘 다리가 너무 아프다', '❄️ 찬물', '덜 아프게'), ('몸 회복을 돕고 싶다', '♨️ 따뜻한 물·사우나', '회복 지표'),
