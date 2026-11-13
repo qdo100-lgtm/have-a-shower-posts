@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>숫자로 보면</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px; display: flex; flex-direction: column; gap: 36px; background: #F6F2E8; color: #17191C; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; word-break: keep-all; overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; font-weight: 700; letter-spacing: 0.12em">
+<div style="color: {{accent}}">HAVE A SHOWER</div>
+<div style="color: #5F646B; letter-spacing: 0.04em">04 / 05</div>
+</div>
+<h2 style="margin: 0; font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 62px; font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; white-space: pre-line">숫자로 보면
+<span style="color: {{accent}}">얼마나</span> 빨라요?</h2>
+
+<div style="background: {{accent}}; border-radius: 20px; padding: 44px 52px; display: flex; flex-direction: column; gap: 14px"><div style="font-size: 30px; font-weight: 700; color: rgba(255,255,255,0.85)">2분 30초~5분 말렸을 때 겉수분 감소 · 56.14% vs 기존 29.46%</div><div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 104px; font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; color: #FFE14A">1.9배 더 빨리</div></div>
+<div style="display: flex; flex-direction: column; gap: 20px"><div style="display: flex; gap: 30px; align-items: center; background: #FFFFFF; border-radius: 20px; padding: 30px 38px">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 50px; font-weight: 800; color: {{accent}}; width: 330px; flex-shrink: 0; letter-spacing: -0.02em">70명 / 100명</div>
+<div style="font-size: 31px; line-height: 1.5">머리 말리기 귀찮아서 머리 감기를 미루거나 건너뛴 적 있다 (여성 100명 조사)</div>
+</div><div style="display: flex; gap: 30px; align-items: center; background: #FFFFFF; border-radius: 20px; padding: 30px 38px">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 50px; font-weight: 800; color: {{accent}}; width: 330px; flex-shrink: 0; letter-spacing: -0.02em">23.56%↑</div>
+<div style="font-size: 31px; line-height: 1.5">사용 후 뿌리 볼륨 개선, 22명 중 21명이 “빨리 마른다” 체감 (인체적용시험)</div>
+</div></div>
+<div style="font-size: 28px; line-height: 1.5; color: #5F646B">※ 회사가 의뢰한 시험이에요. 건조 속도는 사람 머리가 아닌 모발 묶음으로 쟀어요(PNK피부임상연구센터).</div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; gap: 24px; font-size: 23px; color: #5F646B">
+<div>@have.a.shower</div>
+<div style="text-align: right">출처: 스포츠월드·한국경제(2026.11.12) · 사진: 그래비티 제공</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1B3FEF","options":["#1B3FEF","#8A4B3C","#3D4F8A","#17191C"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1B3FEF' };
+}
+}
+</script>
+</body>
+</html>

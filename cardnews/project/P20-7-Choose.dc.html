@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>목적별 선택표</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px; display: flex; flex-direction: column; gap: 36px; background: #F6F2E8; color: #17191C; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; word-break: keep-all; overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; font-weight: 700; letter-spacing: 0.12em">
+<div style="color: {{accent}}">HAVE A SHOWER</div>
+<div style="color: #5F646B; letter-spacing: 0.04em">07 / 08</div>
+</div>
+<h2 style="margin: 0; font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 62px; font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; white-space: pre-line">그래서 나는 뭘?
+<span style="color: {{accent}}">목적별 선택표</span></h2>
+
+<div style="display: flex; flex-direction: column; gap: 18px"><div style="display: flex; align-items: center; gap: 24px; background: #FFFFFF; border-radius: 20px; padding: 28px 34px">
+<div style="flex: 1; font-size: 33px; line-height: 1.4">오늘 다리가 너무 아프다</div>
+<div style="font-size: 30px; color: #5F646B">→</div>
+<div style="width: 330px; flex-shrink: 0"><div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 800; color: {{accent}}">❄️ 찬물</div><div style="font-size: 26px; color: #5F646B">덜 아프게</div></div>
+</div><div style="display: flex; align-items: center; gap: 24px; background: #FFFFFF; border-radius: 20px; padding: 28px 34px">
+<div style="flex: 1; font-size: 33px; line-height: 1.4">몸 회복을 돕고 싶다</div>
+<div style="font-size: 30px; color: #5F646B">→</div>
+<div style="width: 330px; flex-shrink: 0"><div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 800; color: {{accent}}">♨️ 따뜻한 물·사우나</div><div style="font-size: 26px; color: #5F646B">회복 지표</div></div>
+</div><div style="display: flex; align-items: center; gap: 24px; background: #FFFFFF; border-radius: 20px; padding: 28px 34px">
+<div style="flex: 1; font-size: 33px; line-height: 1.4">둘 다 어렵다</div>
+<div style="font-size: 30px; color: #5F646B">→</div>
+<div style="width: 330px; flex-shrink: 0"><div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 800; color: {{accent}}">🪑 30분 쉬기</div><div style="font-size: 26px; color: #5F646B">근력 회복은 비슷</div></div>
+</div></div>
+<div style="background: #FFFFFF; border-left: 10px solid {{accent}}; border-radius: 12px; padding: 26px 32px; font-size: 29px; line-height: 1.55">그룹당 10명인 작은 연구예요. 담그는 시간은 공개되지 않았어요.<br>심장·혈압 문제가 있다면 냉탕·온탕 전에 의료진과 먼저 상의하세요.</div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; gap: 24px; font-size: 23px; color: #5F646B">
+<div>@have.a.shower</div>
+<div style="text-align: right">연구자 결론 요약: 출처: Freya Bayne, 영국 이스트런던대(The Conversation, 2026.11.12) · 선택표: have.a.shower 에디터</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1B3FEF","options":["#1B3FEF","#8A4B3C","#3D4F8A","#17191C"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1B3FEF' };
+}
+}
+</script>
+</body>
+</html>

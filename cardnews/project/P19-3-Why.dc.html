@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>왜 빨리 마르나</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px; display: flex; flex-direction: column; gap: 36px; background: #F6F2E8; color: #17191C; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; word-break: keep-all; overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; font-weight: 700; letter-spacing: 0.12em">
+<div style="color: {{accent}}">HAVE A SHOWER</div>
+<div style="color: #5F646B; letter-spacing: 0.04em">03 / 05</div>
+</div>
+<h2 style="margin: 0; font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 62px; font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; white-space: pre-line">물이 머리카락에
+<span style="color: {{accent}}">맺혀 흘러내리게</span></h2>
+
+<div style="display: flex; flex-direction: column; gap: 20px"><div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="width: 10px; height: 10px; border-radius: 5px; margin-top: 15px; flex-shrink: 0; background: {{accent}}"></div>
+<div style="font-size: 35px; line-height: 1.5">폴리페놀 기반 기술 ‘DryMax 609™’가 머리카락 표면에 얇은 막을 만들어요</div>
+</div><div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="width: 10px; height: 10px; border-radius: 5px; margin-top: 15px; flex-shrink: 0; background: {{accent}}"></div>
+<div style="font-size: 35px; line-height: 1.5">남은 물기가 스며들지 않고 방울로 맺혀 흘러내리게 해서, 말리는 시간을 줄이는 원리예요</div>
+</div><div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="width: 10px; height: 10px; border-radius: 5px; margin-top: 15px; flex-shrink: 0; background: {{accent}}"></div>
+<div style="font-size: 35px; line-height: 1.5">식약처에 ‘탈모 증상 완화’ 기능성 화장품으로 보고된 제품이에요</div>
+</div></div>
+<div style="display: flex; gap: 28px; align-items: stretch">
+<div style="width: 300px; flex-shrink: 0; border-radius: 20px; overflow: hidden"><img src="/_blob/953b35a21f7d60a2b2f89a71d98cac37" alt="그래비티 퀵 드라이 샴푸와 실험 도구" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block"></div>
+<div style="flex: 1; background: #FFFFFF; border-radius: 20px; padding: 34px 38px; display: flex; flex-direction: column; gap: 16px">
+<div style="font-size: 32px; line-height: 1.55">“머리카락이 마르는 과정은 단순히 드라이어의 성능만으로 결정되는 것이 아니라, 모발 표면에 수분이 어떻게 머물고 빠져나가는지와도 밀접하게 관련돼 있어요”</div>
+<div style="font-size: 27px; font-weight: 700; color: {{accent}}">이해신 KAIST 석좌교수</div>
+</div>
+</div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; gap: 24px; font-size: 23px; color: #5F646B">
+<div>@have.a.shower</div>
+<div style="text-align: right">출처: 스포츠월드·한국경제(2026.11.12) · 사진: 그래비티 제공</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1B3FEF","options":["#1B3FEF","#8A4B3C","#3D4F8A","#17191C"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1B3FEF' };
+}
+}
+</script>
+</body>
+</html>
