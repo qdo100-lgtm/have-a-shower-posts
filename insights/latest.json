@@ -1,24 +1,72 @@
 {
-  "checked_at": "2026-11-04 08:13 UTC",
+  "checked_at": "2026-11-13 04:02 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
     "followers_count": 5,
     "follows_count": 0,
-    "media_count": 10,
+    "media_count": 20,
     "id": "28752046457769379"
   },
   "media": [
     {
-      "id": "18133770818507481",
-      "caption": "매일 씻어도 다들 놓치는 이 3곳 🫧\n\n미국 조지워싱턴",
+      "id": "18116058428150547",
+      "caption": "머리 말리기 1.9배 빨라진 샴푸가 나왔어요 💨\n\n머리",
       "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-11-02T07:45:57+0000",
-      "permalink": "https://www.instagram.com/p/DfOzVxTG202/",
+      "timestamp": "2026-11-13T03:57:04+0000",
+      "permalink": "https://www.instagram.com/p/Dfqt3cjkbOn/",
+      "like_count": 0,
+      "comments_count": 0,
+      "insights": {
+        "views": 0,
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      }
+    },
+    {
+      "id": "17909256312598156",
+      "caption": "'먹는 선크림', 진짜 있을까요? 🍣☀️\n\n미국 틱톡에",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-12T08:59:37+0000",
+      "permalink": "https://www.instagram.com/p/DforsyfGxqn/",
+      "like_count": 4,
+      "comments_count": 0,
+      "insights": {
+        "views": 5,
+        "reach": 2,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4
+      }
+    },
+    {
+      "id": "18127924274313009",
+      "caption": "프랑스 사람들이 8년째 1위로 쓰는 바디워시, 뭔지 아",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-12T02:59:54+0000",
+      "permalink": "https://www.instagram.com/p/DfoCiLQjPh3/",
       "like_count": 3,
       "comments_count": 0,
       "insights": {
-        "views": 14,
+        "views": 10,
+        "reach": 3,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 3
+      }
+    },
+    {
+      "id": "18499526491107669",
+      "caption": "샤워 마지막 30초, 뜨겁게 끝내세요 아니면 차갑게 끝",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-11T09:02:08+0000",
+      "permalink": "https://www.instagram.com/p/DfmHMbLEXNK/",
+      "like_count": 3,
+      "comments_count": 0,
+      "insights": {
+        "views": 8,
         "reach": 4,
         "saved": 0,
         "shares": 0,
@@ -26,11 +74,91 @@
       }
     },
     {
-      "id": "18469161802139054",
-      "caption": "장원영은 1시간 씻는다는데, 피부 괜찮을까? 🛁\n\n공연",
+      "id": "18101053766421969",
+      "caption": "호주 가면 한국 샴푸를 42개 매장에서 산다고요? 🇦🇺",
       "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-10-29T08:08:16+0000",
-      "permalink": "https://www.instagram.com/p/DfEitN9FUoE/",
+      "timestamp": "2026-11-11T03:01:01+0000",
+      "permalink": "https://www.instagram.com/p/Dfld3seFFf1/",
+      "like_count": 3,
+      "comments_count": 0,
+      "insights": {
+        "views": 4,
+        "reach": 4,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 3
+      }
+    },
+    {
+      "id": "18111844700221245",
+      "caption": "야쿠르트 회사가 화장품을 만들었어요. 왜일까요? 🥛✨\n",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-10T03:01:10+0000",
+      "permalink": "https://www.instagram.com/p/Dfi5F09FICM/",
+      "like_count": 2,
+      "comments_count": 0,
+      "insights": {
+        "views": 7,
+        "reach": 2,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 2
+      }
+    },
+    {
+      "id": "17933584494421327",
+      "caption": "평생 날씬했던 한고은도 인바디 보고 놀랐대요 😳\n\n한고",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-09T09:00:37+0000",
+      "permalink": "https://www.instagram.com/p/Dfg9bj2m_bT/",
+      "like_count": 4,
+      "comments_count": 0,
+      "insights": {
+        "views": 10,
+        "reach": 5,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4
+      }
+    },
+    {
+      "id": "18122071174983898",
+      "caption": "향수 뿌릴 시간 없을 때, 손에서 향이 나게 하는 법 ",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-09T03:05:25+0000",
+      "permalink": "https://www.instagram.com/p/DfgUx_YFve_/",
+      "like_count": 4,
+      "comments_count": 0,
+      "insights": {
+        "views": 7,
+        "reach": 4,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4
+      }
+    },
+    {
+      "id": "18051299072814915",
+      "caption": "90년대 그 다마고치가, 바디로션으로 나왔어요 🥚\n\nL",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-08T04:59:32+0000",
+      "permalink": "https://www.instagram.com/p/Dfd9DqSDRQ1/",
+      "like_count": 4,
+      "comments_count": 0,
+      "insights": {
+        "views": 12,
+        "reach": 5,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4
+      }
+    },
+    {
+      "id": "18116988959016142",
+      "caption": "등드름, 샤워 순서 하나만 바꿔도 줄어들어요 🚿\n\n몸을",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-04T08:38:05+0000",
+      "permalink": "https://www.instagram.com/p/DfUC4pYHBGy/",
       "like_count": 4,
       "comments_count": 0,
       "insights": {
@@ -39,134 +167,6 @@
         "saved": 0,
         "shares": 0,
         "total_interactions": 4
-      }
-    },
-    {
-      "id": "17889950169687174",
-      "caption": "제니가 쓰는 바디로션, 이거였어요 🫧\n\n올해 바세린 바",
-      "media_type": "VIDEO",
-      "timestamp": "2026-10-27T08:47:37+0000",
-      "permalink": "https://www.instagram.com/reel/De_dk5FDl7g/",
-      "like_count": 5,
-      "comments_count": 0,
-      "insights": {
-        "views": 184,
-        "reach": 167,
-        "saved": 0,
-        "shares": 1,
-        "total_interactions": 6
-      }
-    },
-    {
-      "id": "18198146263389438",
-      "caption": "8달러 목욕물 비누가 725달러에 팔린 이유 🛁🧼\n\n할",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-10-26T09:16:00+0000",
-      "permalink": "https://www.instagram.com/p/De88EiUm0Y0/",
-      "like_count": 5,
-      "comments_count": 0,
-      "insights": {
-        "views": 23,
-        "reach": 5,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 5
-      }
-    },
-    {
-      "id": "18117878638800079",
-      "caption": "매일 쓰는 수건, 3번 이상 쓰고 있나요? 🧺\n\n샤워하",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-10-23T07:39:23+0000",
-      "permalink": "https://www.instagram.com/p/De1CoJ5G0k_/",
-      "like_count": 5,
-      "comments_count": 0,
-      "insights": {
-        "views": 21,
-        "reach": 6,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 5
-      }
-    },
-    {
-      "id": "18078347867428243",
-      "caption": "날 추워지면 올라오는 각질, 박박 밀면 더 생겨요 ❄️",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-10-22T10:04:06+0000",
-      "permalink": "https://www.instagram.com/p/DeyuZMGm7Nd/",
-      "like_count": 6,
-      "comments_count": 0,
-      "insights": {
-        "views": 24,
-        "reach": 8,
-        "saved": 1,
-        "shares": 0,
-        "total_interactions": 7
-      }
-    },
-    {
-      "id": "18441775939179502",
-      "caption": "지금 내가 쓰는 샤워볼이 변기보다 더럽다고? 🧽\n\n샤워",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-10-21T04:59:24+0000",
-      "permalink": "https://www.instagram.com/p/Devmu1gFfkr/",
-      "like_count": 5,
-      "comments_count": 0,
-      "insights": {
-        "views": 22,
-        "reach": 7,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 5
-      }
-    },
-    {
-      "id": "18117573149046662",
-      "caption": "샤워 10분 넘기면, 피부 이렇게 돼요 🚿\n\n뜨끈하게 ",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-10-20T09:20:11+0000",
-      "permalink": "https://www.instagram.com/p/Detfy8ZE9Li/",
-      "like_count": 5,
-      "comments_count": 0,
-      "insights": {
-        "views": 28,
-        "reach": 6,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 5
-      }
-    },
-    {
-      "id": "17943020874096806",
-      "caption": "생각이 너무 많아 머리가 복잡할 때, 이렇게 해보세요 ",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-10-19T13:51:32+0000",
-      "permalink": "https://www.instagram.com/p/DeraDkXk3IT/",
-      "like_count": 5,
-      "comments_count": 0,
-      "insights": {
-        "views": 17,
-        "reach": 6,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 5
-      }
-    },
-    {
-      "id": "18118449341288210",
-      "caption": "샤워 시간과 방법만 이렇게 바꿔도 숙면할 수 있어요 🌙",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-10-19T08:37:05+0000",
-      "permalink": "https://www.instagram.com/p/Deq2DanFZtC/",
-      "like_count": 6,
-      "comments_count": 0,
-      "insights": {
-        "views": 15,
-        "reach": 7,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 6
       }
     }
   ]
