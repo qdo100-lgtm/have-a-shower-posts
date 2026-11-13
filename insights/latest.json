@@ -1,28 +1,44 @@
 {
-  "checked_at": "2026-11-13 04:02 UTC",
+  "checked_at": "2026-11-13 09:01 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
     "followers_count": 5,
     "follows_count": 0,
-    "media_count": 20,
+    "media_count": 21,
     "id": "28752046457769379"
   },
   "media": [
     {
-      "id": "18116058428150547",
-      "caption": "머리 말리기 1.9배 빨라진 샴푸가 나왔어요 💨\n\n머리",
+      "id": "17911978476585584",
+      "caption": "운동 끝나고 냉탕 vs 온탕, 뭐가 나을까요? ❄️♨️",
       "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-11-13T03:57:04+0000",
-      "permalink": "https://www.instagram.com/p/Dfqt3cjkbOn/",
-      "like_count": 0,
+      "timestamp": "2026-11-13T09:00:02+0000",
+      "permalink": "https://www.instagram.com/p/DfrQio7FRCP/",
+      "like_count": 1,
       "comments_count": 0,
       "insights": {
         "views": 0,
         "reach": 0,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 0
+        "total_interactions": 2
+      }
+    },
+    {
+      "id": "18116058428150547",
+      "caption": "머리 말리기 1.9배 빨라진 샴푸가 나왔어요 💨\n\n머리",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-13T03:57:04+0000",
+      "permalink": "https://www.instagram.com/p/Dfqt3cjkbOn/",
+      "like_count": 3,
+      "comments_count": 0,
+      "insights": {
+        "views": 9,
+        "reach": 4,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 3
       }
     },
     {
@@ -147,22 +163,6 @@
       "comments_count": 0,
       "insights": {
         "views": 12,
-        "reach": 5,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 4
-      }
-    },
-    {
-      "id": "18116988959016142",
-      "caption": "등드름, 샤워 순서 하나만 바꿔도 줄어들어요 🚿\n\n몸을",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-11-04T08:38:05+0000",
-      "permalink": "https://www.instagram.com/p/DfUC4pYHBGy/",
-      "like_count": 4,
-      "comments_count": 0,
-      "insights": {
-        "views": 8,
         "reach": 5,
         "saved": 0,
         "shares": 0,
