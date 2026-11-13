@@ -1,0 +1,25 @@
+hairtowel_1.jpg	Pixabay	StockSnap	https://pixabay.com/photos/people-woman-fashion-swimsuit-2590743/
+hairtowel_2.jpg	Pixabay	Pexels	https://pixabay.com/photos/woman-brunette-model-portrait-1868459/
+hairtowel_3.jpg	Pixabay	Nika_Akin	https://pixabay.com/photos/woman-model-portrait-pose-rain-4644496/
+hairdryer_1.jpg	Pixabay	AlexKlen	https://pixabay.com/photos/woman-fashion-lovely-girl-portrait-3153999/
+hairdryer_2.jpg	Pixabay	mostafa_meraji	https://pixabay.com/photos/salon-barbershop-hairstylist-people-6964546/
+hairdryer_3.jpg	Pixabay	melancholiaphotography	https://pixabay.com/photos/woman-portrait-girl-blond-hair-1466628/
+icebath_1.jpg	Pixabay	Angelotti_Creative	https://pixabay.com/photos/ice-winter-lake-erie-snow-sky-7758193/
+icebath_2.jpg	Pixabay	Daniil_Kondrashin	https://pixabay.com/photos/girl-model-wildlife-water-lady-9609496/
+icebath_3.jpg	Pixabay	Henning_W	https://pixabay.com/photos/ice-cream-frozen-glass-transparent-9864294/
+hotbath_1.jpg	Pixabay	erikaferencz48	https://pixabay.com/photos/water-smoke-barrel-vapor-fun-5458436/
+hotbath_2.jpg	Pixabay	15035818	https://pixabay.com/photos/animal-asia-bathing-cute-4793880/
+hotbath_3.jpg	Pixabay	15035818	https://pixabay.com/photos/animal-asia-bathing-cute-4793875/
+workout_1.jpg	Pixabay	trungbart97	https://pixabay.com/photos/run-beach-ocean-people-fitness-4961494/
+workout_2.jpg	Pixabay	dsandzhiev	https://pixabay.com/photos/man-running-moscow-the-kremlin-5077131/
+workout_3.jpg	Pixabay	Ben_Kerckx	https://pixabay.com/photos/runner-people-jogging-walk-jogger-580055/
+legs_1.jpg	Pixabay	OlgaVolkovitskaia	https://pixabay.com/photos/fitness-woman-exercise-workout-6996776/
+legs_2.jpg	Pixabay	boundsmarnie	https://pixabay.com/photos/massage-donation-biking-bodywork-1596790/
+legs_3.jpg	Pixabay	innamykytas	https://pixabay.com/photos/fitness-exercise-woman-fit-stretch-8564038/
+product_grabity_1.jpg	https://grabitylabs.com/web/product/big/202611/1bbeb61dfde419e46da5688a01f283a3.jpg
+product_grabity_2.jpg	https://grabitylabs.com/web/product/small/202611/7732c0946052f719bbf68141547c84d9.jpg
+product_grabity_3.jpg	https://www.sportsworldi.com/newsView/20261112510211
+product_grabity_4.jpg	https://www.hankyung.com/article/202611123267g
+product_grabity_5.jpg	https://www.seoul.co.kr/news/economy/2026/11/12/20261112500236
+product_grabity_6.jpg	https://www.cosmorning.com/news/article.html?no=53945
+product_grabity_7.jpg	https://view.asiae.co.kr/article/2026111308013327640
