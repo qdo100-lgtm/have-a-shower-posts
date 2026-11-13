@@ -19,7 +19,7 @@
 - 대표는 쉬운 한국어, 짧은 답을 선호. 표지 문구는 대표가 직접 고르는 경우가 많으니 2~3안 제시.
 
 ## 3. 일정·진행 중
-- **⚠️ 11/11 18시부터 API 게시가 막힘**: media_publish가 계속 403 `action is blocked`(code 4, subcode 2207051). 11/11 No.16(no17_cold_shower), 11/12 No.17(no18_petit_marseillais)·No.18(no19_eat_skincare), 11/13 No.19(no20_quick_dry_shampoo) 미게시(11/13 재시도도 같은 오류). No.20(no21_hot_cold_recovery)은 점검만 통과. 대표 확인(인스타 앱 '계정 상태', 직접 올리기) 전에는 재시도 자제.
+- **⚠️ 11/11 18시부터 media_publish가 403 `action is blocked`(code 4, subcode 2207051)를 돌려주지만 실제로는 게시됨**(11/13 insights로 확인: No.16~No.19 모두 올라가 있음). 실패로 보여도 **재시도 금지(중복 게시 위험)** → 먼저 `insights.yml` 실행 후 `insights/latest.json` 최신 글을 확인하고, 올라갔으면 posted.txt를 손으로 기록.
 - 매일 08:50 소재 후보 → `briefs/YYYY-MM-DD.md`. 대표가 고르면 '📝 진행' 칸에 기록.
 - **11/14(토) 수능 전날 편**: 수능 11/19. "수능 전날, 이렇게 씻으면 잠이 잘 와요"(잠들기 1~2시간 전 40~42°C 샤워·목욕, Haghayegh 2019 메타분석·Tai 2021 연구 = No.01 근거 재활용 + 시험 당일 아침 팁). 부모·친구가 공유할 각도.
 - 보류 초안: 스레드 `posts/th01_shower_order`(샤워 순서 ①②③, 미게시 — 스레드 가이드상 더 짧게 고쳐야 함), 캔버스 P04 보습 타이밍.
