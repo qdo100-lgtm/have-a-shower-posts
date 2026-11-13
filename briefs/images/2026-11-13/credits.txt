@@ -23,3 +23,15 @@ product_grabity_4.jpg	https://www.hankyung.com/article/202611123267g
 product_grabity_5.jpg	https://www.seoul.co.kr/news/economy/2026/11/12/20261112500236
 product_grabity_6.jpg	https://www.cosmorning.com/news/article.html?no=53945
 product_grabity_7.jpg	https://view.asiae.co.kr/article/2026111308013327640
+plungeface_1.jpg	Pixabay	Daniil_Kondrashin	https://pixabay.com/photos/girl-model-wildlife-water-lady-9609496/
+plungeface_2.jpg	Pixabay	Angelotti_Creative	https://pixabay.com/photos/ice-winter-lake-erie-snow-sky-7758193/
+plungeface_3.jpg	Pixabay	Henning_W	https://pixabay.com/photos/ice-cream-frozen-glass-transparent-9864294/
+plungeman_1.jpg	Pixabay	IndigoBunting	https://pixabay.com/photos/soap-home-made-soap-hand-milled-soap-8429699/
+plungeman_2.jpg	Pixabay	heyerlein	https://pixabay.com/photos/soap-gift-hygiene-flatlay-handmade-3123468/
+plungeman_3.jpg	Pixabay	Angelotti_Creative	https://pixabay.com/photos/ice-winter-lake-erie-snow-sky-7758193/
+hottubface_1.jpg	Pixabay	husien_pro	https://pixabay.com/photos/coffee-hot-chocolate-latte-art-book-10260378/
+hottubface_2.jpg	Pixabay	ebaso	https://pixabay.com/photos/tea-herbs-chamomile-health-flowers-5326194/
+hottubface_3.jpg	Pixabay	ahmetyuksek	https://pixabay.com/photos/coffee-latte-art-candle-cozy-drink-9380550/
+bathface_1.jpg	Pixabay	089photoshootings	https://pixabay.com/photos/woman-everyday-bathrobe-1979266/
+bathface_2.jpg	Pixabay	innamykytas	https://pixabay.com/photos/model-girl-portrait-bath-tub-5528562/
+bathface_3.jpg	Pixabay	nahidhatamiz	https://pixabay.com/photos/summer-legs-bathtub-woman-girl-4271487/
