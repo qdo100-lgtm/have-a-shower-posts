@@ -1,7 +1,5 @@
-# No.19 퀵 드라이 샴푸 / No.20 운동 후 냉탕·온탕 (이름 | 영어 검색어)
-hairtowel | woman wet hair towel
-hairdryer | woman drying hair hairdryer
-icebath | ice bath cold plunge
-hotbath | hot bath steam relax
-workout | tired runner after workout
-legs | athlete leg muscle stretching
+# No.20 냉탕·온탕 — 얼굴 보이는 사진 (11/13 대표: 제품 또는 얼굴 사진만)
+plungeface | woman ice bath cold plunge
+plungeman | man ice bath
+hottubface | woman hot tub relaxing
+bathface | woman bathtub relaxing
