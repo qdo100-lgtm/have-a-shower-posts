@@ -1,28 +1,44 @@
 {
-  "checked_at": "2026-11-13 09:01 UTC",
+  "checked_at": "2026-11-14 03:02 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
     "followers_count": 5,
     "follows_count": 0,
-    "media_count": 21,
+    "media_count": 22,
     "id": "28752046457769379"
   },
   "media": [
     {
-      "id": "17911978476585584",
-      "caption": "운동 끝나고 냉탕 vs 온탕, 뭐가 나을까요? ❄️♨️",
+      "id": "17997308666840402",
+      "caption": "윤아 가방에서 꼭 나오는 관리템 3가지 👜\n\n하루 종일",
       "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-11-13T09:00:02+0000",
-      "permalink": "https://www.instagram.com/p/DfrQio7FRCP/",
-      "like_count": 1,
+      "timestamp": "2026-11-14T03:01:55+0000",
+      "permalink": "https://www.instagram.com/p/DftMWq6GzW9/",
+      "like_count": 0,
       "comments_count": 0,
       "insights": {
         "views": 0,
         "reach": 0,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 2
+        "total_interactions": 0
+      }
+    },
+    {
+      "id": "17911978476585584",
+      "caption": "운동 끝나고 냉탕 vs 온탕, 뭐가 나을까요? ❄️♨️",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-13T09:00:02+0000",
+      "permalink": "https://www.instagram.com/p/DfrQio7FRCP/",
+      "like_count": 3,
+      "comments_count": 0,
+      "insights": {
+        "views": 3,
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 3
       }
     },
     {
@@ -148,22 +164,6 @@
       "insights": {
         "views": 7,
         "reach": 4,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 4
-      }
-    },
-    {
-      "id": "18051299072814915",
-      "caption": "90년대 그 다마고치가, 바디로션으로 나왔어요 🥚\n\nL",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-11-08T04:59:32+0000",
-      "permalink": "https://www.instagram.com/p/Dfd9DqSDRQ1/",
-      "like_count": 4,
-      "comments_count": 0,
-      "insights": {
-        "views": 12,
-        "reach": 5,
         "saved": 0,
         "shares": 0,
         "total_interactions": 4
