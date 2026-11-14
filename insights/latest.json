@@ -1,20 +1,20 @@
 {
-  "checked_at": "2026-11-14 03:02 UTC",
+  "checked_at": "2026-11-14 09:03 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
     "followers_count": 5,
     "follows_count": 0,
-    "media_count": 22,
+    "media_count": 23,
     "id": "28752046457769379"
   },
   "media": [
     {
-      "id": "17997308666840402",
-      "caption": "윤아 가방에서 꼭 나오는 관리템 3가지 👜\n\n하루 종일",
+      "id": "18376409755211785",
+      "caption": "수능 전날 밤, 자기 직전에 씻나요? 1~2시간 전에 ",
       "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-11-14T03:01:55+0000",
-      "permalink": "https://www.instagram.com/p/DftMWq6GzW9/",
+      "timestamp": "2026-11-14T09:01:50+0000",
+      "permalink": "https://www.instagram.com/p/Dft1i9ulWao/",
       "like_count": 0,
       "comments_count": 0,
       "insights": {
@@ -23,6 +23,22 @@
         "saved": 0,
         "shares": 0,
         "total_interactions": 0
+      }
+    },
+    {
+      "id": "17997308666840402",
+      "caption": "윤아 가방에서 꼭 나오는 관리템 3가지 👜\n\n하루 종일",
+      "media_type": "CAROUSEL_ALBUM",
+      "timestamp": "2026-11-14T03:01:55+0000",
+      "permalink": "https://www.instagram.com/p/DftMWq6GzW9/",
+      "like_count": 4,
+      "comments_count": 0,
+      "insights": {
+        "views": 8,
+        "reach": 5,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4
       }
     },
     {
@@ -148,22 +164,6 @@
       "insights": {
         "views": 10,
         "reach": 5,
-        "saved": 0,
-        "shares": 0,
-        "total_interactions": 4
-      }
-    },
-    {
-      "id": "18122071174983898",
-      "caption": "향수 뿌릴 시간 없을 때, 손에서 향이 나게 하는 법 ",
-      "media_type": "CAROUSEL_ALBUM",
-      "timestamp": "2026-11-09T03:05:25+0000",
-      "permalink": "https://www.instagram.com/p/DfgUx_YFve_/",
-      "like_count": 4,
-      "comments_count": 0,
-      "insights": {
-        "views": 7,
-        "reach": 4,
         "saved": 0,
         "shares": 0,
         "total_interactions": 4
