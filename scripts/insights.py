@@ -13,7 +13,7 @@ def get(path, **p):
 
 out = {"checked_at": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime())}
 out["account"] = get("me", fields="username,account_type,followers_count,follows_count,media_count")
-media = get("me/media", fields="id,caption,media_type,timestamp,permalink,like_count,comments_count", limit=10)
+media = get("me/media", fields="id,caption,media_type,timestamp,permalink,like_count,comments_count", limit=30)
 out["media"] = []
 for m in media.get("data", []):
     m["caption"] = (m.get("caption") or "")[:30]

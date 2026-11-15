@@ -10,7 +10,7 @@
   first_comment.txt     (선택: 첫 댓글)
   posted.txt            (게시 후 자동 생성. 있으면 중복 게시를 막아요)
 """
-import json, os, sys, time, glob, urllib.request, urllib.parse, urllib.error
+import calendar, json, os, sys, time, glob, urllib.request, urllib.parse, urllib.error
 
 API = "https://graph.instagram.com/v21.0"
 TOKEN = os.environ.get("IG_TOKEN", "").strip()
@@ -33,8 +33,21 @@ def call(method, path, params=None):
         sys.exit(f"인스타그램 API 오류 ({path}): {e.code} {body}")
 
 
+def find_recent_post(ig_id, since_ts, tries=4):
+    """since_ts(유닉스초) 이후에 올라간 게시물이 있으면 돌려줘요. 반영이 늦을 수 있어 몇 번 확인해요."""
+    for _ in range(tries):
+        time.sleep(15)
+        data = call("GET", f"{ig_id}/media", {"fields": "id,timestamp,permalink", "limit": "3"}).get("data", [])
+        for m in data:
+            ts = calendar.timegm(time.strptime(m["timestamp"][:19], "%Y-%m-%dT%H:%M:%S"))
+            if ts >= since_ts - 60:
+                return m
+    return None
+
+
 def publish_when_ready(ig_id, cid):
     """FINISHED 직후에도 '아직 준비 안 됨'(9007/2207027)이 올 때가 있어 잠깐 기다렸다 다시 시도해요."""
+    started = time.time()
     time.sleep(5)
     for attempt in range(6):
         params = {"creation_id": cid, "access_token": TOKEN}
@@ -49,6 +62,14 @@ def publish_when_ready(ig_id, cid):
                 print(f"아직 준비 중이라 기다렸다 다시 시도해요 ({attempt + 1}/6)")
                 time.sleep(10)
                 continue
+            if "2207051" in body:
+                # 11/11부터: 403 'action is blocked'를 돌려줘도 실제로는 게시되는 경우가 계속됨.
+                # 다시 시도하면 중복 게시가 되므로 절대 재시도하지 않고, 최근 게시물에서 확인만 해요.
+                print("403 action is blocked(2207051) → 재시도하지 않고 최근 게시물을 확인해요")
+                found = find_recent_post(ig_id, started)
+                if found:
+                    print("확인: 실제로는 게시됐어요 →", found.get("permalink"))
+                    return {"id": found["id"], "note": "API는 403(action is blocked)을 돌려줬지만 실제로는 게시됨 (최근 게시물로 확인)"}
             sys.exit(f"인스타그램 API 오류 ({ig_id}/media_publish): {e.code} {body}")
     sys.exit("게시물이 준비되지 않아 올리지 못했어요. 잠시 후 다시 실행해 주세요.")
 
@@ -131,6 +152,8 @@ def main():
         print("첫 댓글 완료")
     with open(os.path.join(folder, "posted.txt"), "w", encoding="utf-8") as f:
         f.write(f"media_id: {mid}\nlink: {link}\nposted_at: {time.strftime('%Y-%m-%d %H:%M:%S UTC', time.gmtime())}\n")
+        if media.get("note"):
+            f.write(f"note: {media['note']}\n")
 
 
 def publish_reel(folder, reel, publish):
