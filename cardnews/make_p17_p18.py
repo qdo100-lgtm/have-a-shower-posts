@@ -31,6 +31,33 @@ def cover(no, img, pos, title_html):
 </div>'''
 
 
+# ───── 표지 v3 (2026-11-15 대표 결정) ─────
+# 코너별 태그 색 (그리드에서 코너가 한눈에 보이게)
+TAG = {
+    '7일 따라하기': '#FFE14A',
+    '진짜일까?': '#7FD4FF',
+    '골라드림': '#FFB8D9',
+    '웃긴데 진짜': '#B6F5A1',
+    '셀럽 루틴': '#FFFFFF',
+    '신상': '#FFFFFF',
+}
+
+
+def cover3(no, img, pos, tag, title_html, sub, credit=''):
+    tc = TAG.get(tag, '#FFFFFF')
+    return f'''<div style="position: relative; width: 1080px; height: 1350px; overflow: hidden; background: #111315; color: #FFFFFF; font-family: {FONT}; word-break: keep-all">
+<img src="{img}" alt="" style="position: absolute; left: 0; top: 0; width: 1080px; height: 1350px; object-fit: cover; object-position: {pos}; display: block">
+<div style="position: absolute; left: 0; right: 0; top: 0; height: 300px; background: linear-gradient(180deg, rgba(10,12,14,0.45) 0%, rgba(10,12,14,0) 100%)"></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 760px; background: linear-gradient(180deg, rgba(10,12,14,0) 0%, rgba(10,12,14,0.55) 35%, rgba(10,12,14,0.92) 80%)"></div>
+<img src="{LOGO_W}" alt="have a shower 로고" style="position: absolute; left: 50%; top: 150px; transform: translateX(-50%); height: 54px; display: block">
+<div style="position: absolute; left: 72px; bottom: 470px; padding: 10px 22px; border-radius: 40px; background: {tc}; color: #111315; font-size: 30px; font-weight: 800; letter-spacing: -0.01em">{tag}</div>
+<h1 style="position: absolute; left: 72px; right: 72px; bottom: 250px; margin: 0; font-family: {FONT}; font-size: 84px; font-weight: 900; line-height: 1.22; letter-spacing: -0.04em; color: #FFFFFF; text-shadow: 0 3px 18px rgba(0,0,0,0.45); white-space: pre-line">{title_html}</h1>
+<div style="position: absolute; left: 72px; right: 72px; bottom: 190px; font-size: 34px; font-weight: 500; line-height: 1.35; color: rgba(255,255,255,0.88)">{sub}</div>
+<div style="position: absolute; left: 72px; bottom: 70px; font-size: 20px; color: rgba(255,255,255,0.55)">{credit}</div>
+<div style="position: absolute; right: 72px; bottom: 66px; font-size: 24px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,0.7)">No.{no}</div>
+</div>'''
+
+
 def page(num, total, h2, inner, src):
     return f'''<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px; display: flex; flex-direction: column; gap: 36px; background: #F6F2E8; color: #17191C; font-family: {FONT}; word-break: keep-all; overflow: hidden">
 <div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; font-weight: 700; letter-spacing: 0.12em">
