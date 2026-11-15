@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-14 09:03 UTC",
+  "checked_at": "2026-11-15 00:16 UTC",
   "account": {
     "username": "have.a.shower",
     "account_type": "BUSINESS",
@@ -15,14 +15,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-11-14T09:01:50+0000",
       "permalink": "https://www.instagram.com/p/Dft1i9ulWao/",
-      "like_count": 0,
+      "like_count": 3,
       "comments_count": 0,
       "insights": {
-        "views": 0,
-        "reach": 0,
+        "views": 10,
+        "reach": 5,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 0
+        "total_interactions": 3
       }
     },
     {
@@ -47,14 +47,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-11-13T09:00:02+0000",
       "permalink": "https://www.instagram.com/p/DfrQio7FRCP/",
-      "like_count": 3,
+      "like_count": 4,
       "comments_count": 0,
       "insights": {
-        "views": 3,
-        "reach": 1,
+        "views": 5,
+        "reach": 2,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 3
+        "total_interactions": 4
       }
     },
     {
@@ -143,14 +143,14 @@
       "media_type": "CAROUSEL_ALBUM",
       "timestamp": "2026-11-10T03:01:10+0000",
       "permalink": "https://www.instagram.com/p/Dfi5F09FICM/",
-      "like_count": 2,
+      "like_count": 3,
       "comments_count": 0,
       "insights": {
-        "views": 7,
-        "reach": 2,
+        "views": 8,
+        "reach": 3,
         "saved": 0,
         "shares": 0,
-        "total_interactions": 2
+        "total_interactions": 3
       }
     },
     {
