@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>마무리</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 80px 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 42px; background: #1B3FEF; color: #FBF7EC; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; text-align: center; word-break: keep-all; overflow: hidden">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 56px; font-weight: 800; line-height: 1.3">씻기 소문 판정표</div>
+<div style="display: flex; flex-direction: column; gap: 22px; background: rgba(255,255,255,0.1); border-radius: 22px; padding: 40px 48px; align-self: stretch"><div style="display: flex; gap: 22px; align-items: center; text-align: left"><div style="width: 64px; height: 64px; border-radius: 32px; background: #E5484D; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 900; color: #FFFFFF; flex-shrink: 0">✕</div><div style="font-size: 33px; line-height: 1.4">안 씻으면 페로몬 → 근거 없음</div></div><div style="display: flex; gap: 22px; align-items: center; text-align: left"><div style="width: 64px; height: 64px; border-radius: 32px; background: #F2A33A; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 900; color: #FFFFFF; flex-shrink: 0">△</div><div style="font-size: 33px; line-height: 1.4">겨울 이틀에 한 번 → 의사 한 명 의견</div></div><div style="display: flex; gap: 22px; align-items: center; text-align: left"><div style="width: 64px; height: 64px; border-radius: 32px; background: #F2A33A; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 900; color: #FFFFFF; flex-shrink: 0">△</div><div style="font-size: 33px; line-height: 1.4">불 끄고 샤워 → 원리만 맞음</div></div></div>
+<div style="font-size: 32px; line-height: 1.55">이상한 샤워 꿀팁 받으면 꺼내 보게 저장 📌</div>
+<img src="/_blob/291cad6575aa62613f2a8a37dce482f8" alt="have a shower 로고" style="width: 360px; display: block">
+<div style="font-size: 30px; line-height: 1.6">몸을 돌보는 시간에 대한 연구, 매일 전해요</div>
+<div style="font-size: 30px; font-weight: 700; color: #FFE14A">다음엔 어떤 소문을 판정할까요? 댓글로 💬</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1B3FEF","options":["#1B3FEF","#8A4B3C","#3D4F8A","#17191C"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1B3FEF' };
+}
+}
+</script>
+</body>
+</html>
