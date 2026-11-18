@@ -25,3 +25,9 @@ v_superman_1.mp4	Pixabay	PhamXuanThuy	https://pixabay.com/videos/id-64651/
 v_superman_2.mp4	Pixabay	Coverr-Free-Footage	https://pixabay.com/videos/id-10809/
 v_towel_1.mp4	Pixabay	Skylent	https://pixabay.com/videos/id-3967/
 v_towel_2.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-694/
+m_carefree.mp3	Music: "Carefree" Kevin MacLeod (incompetech.com) CC BY 4.0	https://incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3
+m_easylemon.mp3	Music: "Easy Lemon" Kevin MacLeod (incompetech.com) CC BY 4.0	https://incompetech.com/music/royalty-free/mp3-royaltyfree/Easy%20Lemon.mp3
+m_wallpaper.mp3	Music: "Wallpaper" Kevin MacLeod (incompetech.com) CC BY 4.0	https://incompetech.com/music/royalty-free/mp3-royaltyfree/Wallpaper.mp3
+m_funkorama.mp3	Music: "Funkorama" Kevin MacLeod (incompetech.com) CC BY 4.0	https://incompetech.com/music/royalty-free/mp3-royaltyfree/Funkorama.mp3
+m_hepcats.mp3	Music: "Hep Cats" Kevin MacLeod (incompetech.com) CC BY 4.0	https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hep%20Cats.mp3
+m_fluffing.mp3	Music: "Fluffing a Duck" Kevin MacLeod (incompetech.com) CC BY 4.0	https://incompetech.com/music/royalty-free/mp3-royaltyfree/Fluffing%20a%20Duck.mp3
