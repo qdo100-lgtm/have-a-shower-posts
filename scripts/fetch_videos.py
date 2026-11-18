@@ -67,19 +67,25 @@ def main():
             continue
         name, query = [s.strip() for s in line.split("|", 1)]
         results, site = [], ""
-        if pexels:
+        if query.startswith("http"):
+            # 주소를 바로 적은 경우(예: Mixkit 무료 영상) 그대로 받음
+            results, site = [(query, "", query, {})], "direct"
+            pexels_off = True
+        else:
+            pexels_off = False
+        if pexels and not pexels_off:
             try:
                 results, site = search_pexels(query, pexels), "Pexels"
             except Exception as e:
                 print(f"{name}: Pexels 오류 {e}")
-        if not results and pixabay:
+        if not results and pixabay and not pexels_off:
             try:
                 results, site = search_pixabay(query, pixabay), "Pixabay"
             except Exception as e:
                 print(f"{name}: Pixabay 오류 {e}")
         print(f"{name}: '{query}' → {len(results)}개 ({site})")
         for i, (url, author, page, headers) in enumerate(results, 1):
-            out = folder / f"v_{name}_{i}.mp4"
+            out = folder / (f"v_{name}.mp4" if site == "direct" else f"v_{name}_{i}.mp4")
             if out.exists():
                 continue
             try:
