@@ -14,6 +14,7 @@ FONT = "'Noto Sans CJK KR', sans-serif"
 CO, CR, Y, INK = '#1B3FEF', '#F6F2E8', '#FFE14A', '#17191C'
 PINK, YEL = '#FFB8D9', '#FFE14A'
 W, H = 1080, 1920
+MUSIC_START = {'m_funkorama.mp3': 6}  # 곡별 시작 위치(초)
 # 릴스 화면 안전 구역: 위 220px, 아래 420px, 오른쪽 140px 피하기
 BASE = f"*{{box-sizing:border-box}} body{{margin:0;width:{W}px;height:{H}px;font-family:{FONT};word-break:keep-all;letter-spacing:-0.03em}}"
 
@@ -78,9 +79,9 @@ def move(i, name, how, bg, color):
 # ---------- 장면 목록 ----------
 def r1():
     S = []
-    S.append(dict(video='v_shower_2.mp4', ss=2, d=3.2, html=hook('골라드림', PINK,
+    S.append(dict(video='v_shower_2.mp4', ss=2, d=2.4, html=hook('골라드림', PINK,
         f'겨울만 되면\n정강이 {hl("가려운")} 사람?', '올리브영 바디로션 5개, 가격까지 정리했어요', '영상: Pixabay')))
-    S.append(dict(d=3.4, html=card(CO, '#fff', f'''<div style="font-size:44px;font-weight:700;opacity:.85">올리브영엔 아예</div>
+    S.append(dict(d=2.4, html=card(CO, '#fff', f'''<div style="font-size:44px;font-weight:700;opacity:.85">올리브영엔 아예</div>
 <div style="margin-top:14px;font-size:104px;font-weight:900;line-height:1.18">'{hl("가려움")}'<br>기획전이 있어요</div>
 <div style="margin-top:50px;font-size:44px;font-weight:600;line-height:1.5">"'가려움' 관련 키워드가<br>겨울철에는 {hl("2배")}나 더 검색"</div>''',
         '출처: 올리브영 기획전 \'겨울철 인기 검색어, 가려움\' 문구', '')))
@@ -92,12 +93,12 @@ def r1():
         ('product_johnsons_1.jpg', '존슨즈베이비 베드타임 로션', '500ml + 500ml', '', '37,400원~', '자기 전에 바르는 순한 로션', ''),
     ]
     for k, p in enumerate(P, 1):
-        S.append(dict(d=2.8, html=product(k, len(P), img(p[0]), *p[1:])))
-    S.append(dict(d=3.6, html=card(CR, INK, f'''<div style="font-size:44px;font-weight:700;color:#5F646B">근데 뭘 바르냐보다</div>
+        S.append(dict(d=1.8, html=product(k, len(P), img(p[0]), *p[1:])))
+    S.append(dict(d=2.5, html=card(CR, INK, f'''<div style="font-size:44px;font-weight:700;color:#5F646B">근데 뭘 바르냐보다</div>
 <div style="margin-top:14px;font-size:104px;font-weight:900;line-height:1.18">샤워 후<br><span style="color:{CO}">3분 안에</span><br>바르기</div>
 <div style="margin-top:46px;font-size:40px;font-weight:600;line-height:1.5">씻고 3~4분 안에 피부 수분이<br>크게 떨어졌어요 (15명 작은 연구)</div>''',
         '출처: 미국 OHSU 피부과 연구(Dermatitis, 2025, 15명)', '')))
-    S.append(dict(d=3.4, html=card(CO, '#fff', f'''<div style="font-size:96px;font-weight:900;line-height:1.2">저장해두고<br>{hl("올영 갈 때")}<br>꺼내 보세요</div>
+    S.append(dict(d=2.6, html=card(CO, '#fff', f'''<div style="font-size:96px;font-weight:900;line-height:1.2">저장해두고<br>{hl("올영 갈 때")}<br>꺼내 보세요</div>
 <div style="margin-top:56px;font-size:44px;font-weight:600;line-height:1.5">여러분 겨울 최애 로션은?<br>댓글로 알려주세요</div>
 <img src="{LOGO_W}" style="margin-top:70px;height:56px;align-self:flex-start">''', '', '')))
     return S
@@ -105,9 +106,9 @@ def r1():
 
 def r2():
     S = []
-    S.append(dict(video='v_squat_1.mp4', ss=1, d=3.2, html=hook('7일 따라하기', YEL,
+    S.append(dict(video='v_squat_1.mp4', ss=1, d=2.4, html=hook('7일 따라하기', YEL,
         f'샤워하기 전\n딱 {hl("7분")}', '물 데워지는 동안 동작 7개 × 60초', '영상: Pixabay')))
-    S.append(dict(d=3.6, html=card(CR, INK, f'''<div style="font-size:44px;font-weight:700;color:#5F646B">영국 피트니스 에디터가</div>
+    S.append(dict(d=2.5, html=card(CR, INK, f'''<div style="font-size:44px;font-weight:700;color:#5F646B">영국 피트니스 에디터가</div>
 <div style="margin-top:14px;font-size:100px;font-weight:900;line-height:1.18">샤워 전 7분,<br><span style="color:{CO}">30일</span> 해봤대요</div>
 <div style="margin-top:46px;font-size:42px;font-weight:600;line-height:1.55">푸시업 자세가 좋아지고<br>몸이 좀 더 잘 움직였대요<br><span style="color:#5F646B">눈에 띄는 몸 변화는 없었다고 솔직 후기</span></div>''',
         "출처: Tom's Guide (2026-11-15)", '')))
@@ -117,12 +118,12 @@ def r2():
          ('슈퍼맨', '엎드려서 팔·다리<br>동시에 들기')]
     for k, (n, h) in enumerate(M, 1):
         bg, c = (CO, '#fff') if k % 2 else (CR, INK)
-        S.append(dict(d=2.4, html=move(k, n, h, bg, c)))
+        S.append(dict(d=1.6, html=move(k, n, h, bg, c)))
     days = ''.join(f'<div style="width:104px;height:150px;border-radius:22px;background:#fff;color:{INK};display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-size:36px;font-weight:800">{d}<div style="width:46px;height:46px;border-radius:12px;border:4px solid {CO}"></div></div>' for d in '월화수목금토일')
-    S.append(dict(d=3.6, html=card(CO, '#fff', f'''<div style="font-size:96px;font-weight:900;line-height:1.2">7일만<br>{hl("체크")}해 봐요</div>
+    S.append(dict(d=2.5, html=card(CO, '#fff', f'''<div style="font-size:96px;font-weight:900;line-height:1.2">7일만<br>{hl("체크")}해 봐요</div>
 <div style="margin-top:50px;display:flex;gap:14px;flex-wrap:wrap">{days}</div>
 <div style="margin-top:50px;font-size:42px;font-weight:600;line-height:1.5">끝나면 바로 따뜻한 샤워<br>운동 같이 할 친구 태그하기</div>''', '', '')))
-    S.append(dict(d=2.8, html=card(CR, INK, f'''<div style="font-size:96px;font-weight:900;line-height:1.2">저장해두고<br><span style="color:{CO}">내일 아침</span>부터</div>
+    S.append(dict(d=2.4, html=card(CR, INK, f'''<div style="font-size:96px;font-weight:900;line-height:1.2">저장해두고<br><span style="color:{CO}">내일 아침</span>부터</div>
 <div style="margin-top:50px;font-size:44px;font-weight:600;line-height:1.5">몇 번 동작이 제일 힘들었어요?<br>댓글로 알려주세요</div>
 <div style="margin-top:70px;font-size:34px;font-weight:800;color:{CO}">@have.a.shower</div>''', '', '')))
     return S
@@ -150,7 +151,7 @@ def run(cmd):
         print(r.stderr[-2000:]); sys.exit(1)
 
 
-def build(name, scenes, out):
+def build(name, scenes, out, music=None):
     tmp = os.path.join(out, '_' + name)
     os.makedirs(tmp, exist_ok=True)
     render_layers(scenes, tmp)
@@ -176,8 +177,11 @@ def build(name, scenes, out):
     open(lst, 'w').write(''.join(f"file '{p}'\n" for p in parts))
     total = sum(s['d'] for s in scenes)
     dst = os.path.join(out, name + '.mp4')
-    run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst,
-         '-f', 'lavfi', '-t', str(total), '-i', 'anullsrc=r=44100:cl=stereo',
+    if music:
+        audio = ['-ss', str(MUSIC_START.get(music, 0)), '-i', os.path.join(IMGD, music), '-af', f'afade=in:d=0.3,afade=out:st={total-1.2:.2f}:d=1.2,loudnorm=I=-15:TP=-1.5']
+    else:
+        audio = ['-f', 'lavfi', '-t', str(total), '-i', 'anullsrc=r=44100:cl=stereo']
+    run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, *audio, '-t', str(total),
          '-c:v', 'libx264', '-preset', 'medium', '-crf', '21', '-profile:v', 'high', '-pix_fmt', 'yuv420p',
          '-c:a', 'aac', '-b:a', '128k', '-shortest', '-movflags', '+faststart', dst])
     print(dst, f'{total:.1f}s')
@@ -185,7 +189,9 @@ def build(name, scenes, out):
 
 if __name__ == '__main__':
     out = sys.argv[1]
+    # 사용: ... <출력폴더> r1=m_carefree.mp3 r2=m_funkorama.mp3  (음악 없으면 r1 r2)
     which = sys.argv[2:] or ['r1', 'r2']
     os.makedirs(out, exist_ok=True)
     for w in which:
-        build(w, {'r1': r1, 'r2': r2}[w](), out)
+        k, _, m = w.partition('=')
+        build(k, {'r1': r1, 'r2': r2}[k](), out, m or None)
