@@ -6,6 +6,7 @@ on:
     paths:
       - "briefs/images/**/queries.txt"
       - "briefs/images/**/products.txt"
+      - "briefs/images/**/videos.txt"
   workflow_dispatch:
     inputs:
       file:
@@ -44,6 +45,17 @@ jobs:
             files=$(git diff --name-only HEAD~1 HEAD -- 'briefs/images/**/products.txt')
           fi
           for f in $files; do [ -f "$f" ] && python scripts/fetch_products.py "$f" || true; done
+      - name: 릴스 영상 받기
+        env:
+          PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
+          PEXELS_KEY: ${{ secrets.PEXELS_KEY }}
+        run: |
+          if [ -n "${{ inputs.file }}" ]; then
+            files=$(dirname "${{ inputs.file }}")/videos.txt
+          else
+            files=$(git diff --name-only HEAD~1 HEAD -- 'briefs/images/**/videos.txt')
+          fi
+          for f in $files; do [ -f "$f" ] && python scripts/fetch_videos.py "$f" || true; done
       - name: 저장
         run: |
           git config user.name "github-actions"
