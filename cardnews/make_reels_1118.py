@@ -124,10 +124,10 @@ def r2():
              'pushup': ('mixkit/v_mk24383.mp4', 1.0, 0.5, 0.5, 1.0),
              'lunge': ('mixkit/v_mk52110.mp4', 0.6, 0.58, 0.62, 1.5),
              'situp': ('mixkit/v_mk5355.mp4', 0.0, 0.42, 0.5, 1.0)}
-    KEYS = ['squat', 'pushup', 'catcow', 'shoulder', 'lunge', 'situp', 'superman']
+    KEYS = ['squat', 'pushup', 'lunge', 'situp', 'catcow', 'shoulder', 'superman']  # 실제 영상 4개 먼저, 애니메이션 3개 뒤
     M = [('스쿼트', '의자에 앉듯<br>엉덩이를 뒤로'), ('푸시업', '힘들면<br>무릎 대고 해도 OK'),
-         ('캣카우', '네발 자세에서 등을<br>둥글게 ↔ 오목하게'), ('날개뼈 모으기', '양쪽 날개뼈를<br>등 가운데로 꾹'),
          ('리버스 런지', '한 발씩 뒤로,<br>양쪽 번갈아'), ('윗몸일으키기', '목 말고<br>배 힘으로'),
+         ('캣카우', '네발 자세에서 등을<br>둥글게 ↔ 오목하게'), ('날개뼈 모으기', '양쪽 날개뼈를<br>등 가운데로 꾹'),
          ('슈퍼맨', '엎드려서 팔·다리<br>동시에 들기')]
     for k, (n, h) in enumerate(M, 1):
         bg, c = (CO, '#fff') if k % 2 else (CR, INK)
@@ -178,8 +178,8 @@ def build(name, scenes, out, music=None):
             # 영상 + 글자 레이어(아래에서 살짝 올라오며 나타남)
             run(['ffmpeg', '-v', 'error', '-y', '-ss', str(s['ss']), '-t', str(d), '-i', os.path.join(IMGD, s['video']),
                  '-loop', '1', '-t', str(d), '-i', s['png'], '-filter_complex',
-                 f"[0:v]scale=-2:{H},crop={W}:{H},fps=30,setsar=1[bg];[1:v]format=rgba,fade=in:st=0:d=0.35:alpha=1[o];"
-                 f"[bg][o]overlay=0:'max(0,50-50*t/0.35)',format=yuv420p[v]",
+                 f"[0:v]setpts=PTS-STARTPTS,scale=-2:{H},crop={W}:{H},fps=30,setsar=1[bg];[1:v]format=rgba[o];"
+                 f"[bg][o]overlay=0:0,format=yuv420p[v]",
                  '-map', '[v]', '-an', '-r', '30', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', seg])
         elif 'clip' in s:
             # 동작 카드 + 실제 영상(둥근 모서리 박스)
@@ -194,8 +194,8 @@ def build(name, scenes, out, music=None):
             y = int(max(0, min(vh - 760, vh * cy - 380)))
             run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-t', str(d), '-i', s['png'],
                  '-ss', str(ss), '-t', str(d), '-i', os.path.join(IMGD, f), '-loop', '1', '-t', str(d), '-i', mask, '-filter_complex',
-                 f"[1:v]fps=30,scale={vw}:{vh},crop=900:760:{x}:{y},format=rgba[c];[2:v]format=gray[m];[c][m]alphamerge[cv];"
-                 f"[0:v]fps=30[b];[b][cv]overlay=90:300,fade=in:st=0:d=0.12:color=white,format=yuv420p[v]",
+                 f"[1:v]setpts=PTS-STARTPTS,fps=30,scale={vw}:{vh},crop=900:760:{x}:{y},format=rgba[c];[2:v]format=gray[m];[c][m]alphamerge[cv];"
+                 f"[0:v]fps=30[b];[b][cv]overlay=90:300,format=yuv420p[v]",
                  '-map', '[v]', '-frames:v', str(int(round(d * 30))), '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', seg])
         elif 'anim' in s:
             # 동작 카드 + 사람 애니메이션(2회 반복)
@@ -208,14 +208,14 @@ def build(name, scenes, out, music=None):
                 FA.render(s['anim'], fd, d, 2, (27, 63, 239), (23, 25, 28), (246, 242, 232, 255))
             run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-t', str(d), '-i', s['png'],
                  '-framerate', '30', '-i', os.path.join(fd, '%03d.png'), '-filter_complex',
-                 "[0:v]fps=30[b];[b][1:v]overlay=90:300,fade=in:st=0:d=0.12:color=white,format=yuv420p[v]",
+                 "[0:v]fps=30[b];[b][1:v]overlay=90:300,format=yuv420p[v]",
                  '-map', '[v]', '-frames:v', str(int(round(d * 30))), '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', seg])
         else:
             # 카드: 천천히 확대(1.00→1.04) + 첫 0.15초 살짝 밝게
             n = int(d * 30)
             run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-i', s['png'], '-filter_complex',
                  f"[0:v]scale={W*2}:{H*2},zoompan=z='1+0.04*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps=30,"
-                 f"fade=in:st=0:d=0.15:color=white,format=yuv420p[v]",
+                 f"format=yuv420p[v]",
                  '-map', '[v]', '-frames:v', str(n), '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', seg])
         parts.append(seg)
     lst = os.path.join(tmp, 'list.txt')
