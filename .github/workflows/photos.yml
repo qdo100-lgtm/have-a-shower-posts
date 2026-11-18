@@ -7,6 +7,7 @@ on:
       - "briefs/images/**/queries.txt"
       - "briefs/images/**/products.txt"
       - "briefs/images/**/videos.txt"
+      - "briefs/images/**/music.txt"
   workflow_dispatch:
     inputs:
       file:
@@ -56,6 +57,14 @@ jobs:
             files=$(git diff --name-only HEAD~1 HEAD -- 'briefs/images/**/videos.txt')
           fi
           for f in $files; do [ -f "$f" ] && python scripts/fetch_videos.py "$f" || true; done
+      - name: 릴스 음악 받기
+        run: |
+          if [ -n "${{ inputs.file }}" ]; then
+            files=$(dirname "${{ inputs.file }}")/music.txt
+          else
+            files=$(git diff --name-only HEAD~1 HEAD -- 'briefs/images/**/music.txt')
+          fi
+          for f in $files; do [ -f "$f" ] && python scripts/fetch_music.py "$f" || true; done
       - name: 저장
         run: |
           git config user.name "github-actions"
