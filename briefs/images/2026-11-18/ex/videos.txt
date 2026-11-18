@@ -1,0 +1,15 @@
+# No.28 동작별 영상 (단어 1~2개로 검색)
+squat | squats
+squat2 | squat workout
+pushup | push-ups
+pushup2 | pushups exercise
+catcow | cat cow pose
+catcow2 | yoga cat pose
+shoulder | shoulder blade
+shoulder2 | back stretching exercise
+lunge | lunges
+lunge2 | lunge exercise
+situp | sit-ups
+situp2 | crunches
+superman | superman pose exercise
+superman2 | back extension

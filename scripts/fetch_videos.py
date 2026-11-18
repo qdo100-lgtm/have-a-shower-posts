@@ -14,7 +14,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-PER_QUERY = 2
+PER_QUERY = 3
 
 
 def get(url, headers=None):
@@ -49,7 +49,7 @@ def search_pixabay(query, key):
     hits = json.loads(get(f"https://pixabay.com/api/videos/?{params}")).get("hits", [])
     out = []
     for h in hits:
-        v = h["videos"].get("large") or h["videos"].get("medium")
+        v = h["videos"].get("medium") or h["videos"].get("large")
         if v and v.get("url"):
             out.append((v["url"], h["user"], h["pageURL"], {}))
     return out[:PER_QUERY]
