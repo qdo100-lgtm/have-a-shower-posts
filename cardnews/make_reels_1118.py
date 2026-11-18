@@ -119,6 +119,11 @@ def r2():
 <div style="margin-top:14px;font-size:100px;font-weight:900;line-height:1.18">샤워 전 7분,<br><span style="color:{CO}">30일</span> 해봤대요</div>
 <div style="margin-top:46px;font-size:42px;font-weight:600;line-height:1.55">푸시업 자세가 좋아지고<br>몸이 좀 더 잘 움직였대요<br><span style="color:#5F646B">눈에 띄는 몸 변화는 없었다고 솔직 후기</span></div>''',
         "출처: Tom's Guide (2026-11-15)", '')))
+    # 실제 영상(Mixkit 무료 라이선스)이 있는 동작: (파일, 시작초, 가로중심, 세로중심, 확대)
+    CLIPS = {'squat': ('mixkit/v_mk52116.mp4', 3.0, 0.56, 0.43, 1.15),
+             'pushup': ('mixkit/v_mk24383.mp4', 1.0, 0.5, 0.5, 1.0),
+             'lunge': ('mixkit/v_mk52110.mp4', 0.6, 0.58, 0.62, 1.5),
+             'situp': ('mixkit/v_mk5355.mp4', 0.0, 0.42, 0.5, 1.0)}
     KEYS = ['squat', 'pushup', 'catcow', 'shoulder', 'lunge', 'situp', 'superman']
     M = [('스쿼트', '의자에 앉듯<br>엉덩이를 뒤로'), ('푸시업', '힘들면<br>무릎 대고 해도 OK'),
          ('캣카우', '네발 자세에서 등을<br>둥글게 ↔ 오목하게'), ('날개뼈 모으기', '양쪽 날개뼈를<br>등 가운데로 꾹'),
@@ -126,7 +131,10 @@ def r2():
          ('슈퍼맨', '엎드려서 팔·다리<br>동시에 들기')]
     for k, (n, h) in enumerate(M, 1):
         bg, c = (CO, '#fff') if k % 2 else (CR, INK)
-        S.append(dict(d=2.4, html=move(k, n, h, bg, c), anim=KEYS[k - 1], dark=bool(k % 2)))
+        sc = dict(d=2.4, html=move(k, n, h, bg, c), anim=KEYS[k - 1], dark=bool(k % 2))
+        if KEYS[k - 1] in CLIPS:
+            sc['clip'] = CLIPS[KEYS[k - 1]]
+        S.append(sc)
     days = ''.join(f'<div style="width:104px;height:150px;border-radius:22px;background:#fff;color:{INK};display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-size:36px;font-weight:800">{d}<div style="width:46px;height:46px;border-radius:12px;border:4px solid {CO}"></div></div>' for d in '월화수목금토일')
     S.append(dict(d=2.5, html=card(CO, '#fff', f'''<div style="font-size:96px;font-weight:900;line-height:1.2">7일만<br>{hl("체크")}해 봐요</div>
 <div style="margin-top:50px;display:flex;gap:14px;flex-wrap:wrap">{days}</div>
@@ -173,6 +181,22 @@ def build(name, scenes, out, music=None):
                  f"[0:v]scale=-2:{H},crop={W}:{H},fps=30,setsar=1[bg];[1:v]format=rgba,fade=in:st=0:d=0.35:alpha=1[o];"
                  f"[bg][o]overlay=0:'max(0,50-50*t/0.35)',format=yuv420p[v]",
                  '-map', '[v]', '-an', '-r', '30', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', seg])
+        elif 'clip' in s:
+            # 동작 카드 + 실제 영상(둥근 모서리 박스)
+            from PIL import Image as _I, ImageDraw as _D
+            mask = os.path.join(tmp, 'mask.png')
+            if not os.path.exists(mask):
+                m = _I.new('L', (900, 760), 0); _D.Draw(m).rounded_rectangle([0, 0, 899, 759], radius=40, fill=255); m.save(mask)
+            f, ss, cx, cy, z = s['clip']
+            vh = int(760 * z) // 2 * 2
+            vw = int(vh * 16 / 9) // 2 * 2
+            x = int(max(0, min(vw - 900, vw * cx - 450)))
+            y = int(max(0, min(vh - 760, vh * cy - 380)))
+            run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-t', str(d), '-i', s['png'],
+                 '-ss', str(ss), '-t', str(d), '-i', os.path.join(IMGD, f), '-loop', '1', '-t', str(d), '-i', mask, '-filter_complex',
+                 f"[1:v]fps=30,scale={vw}:{vh},crop=900:760:{x}:{y},format=rgba[c];[2:v]format=gray[m];[c][m]alphamerge[cv];"
+                 f"[0:v]fps=30[b];[b][cv]overlay=90:300,fade=in:st=0:d=0.12:color=white,format=yuv420p[v]",
+                 '-map', '[v]', '-frames:v', str(int(round(d * 30))), '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', seg])
         elif 'anim' in s:
             # 동작 카드 + 사람 애니메이션(2회 반복)
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
