@@ -1,0 +1,27 @@
+product_physiogel_1.jpg	https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/550/10/0000/0012/A00000012356811ko.jpg
+product_aestura_1.jpg	https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/550/10/0000/0016/A00000016116504ko.jpg
+product_cetaphil_1.jpg	https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/550/10/0000/0015/A000000157452144ko.jpg
+product_raybi_1.jpg	https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/550/10/0000/0017/A00000017413514ko.jpg
+product_johnsons_1.jpg	https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/550/10/0000/0014/A00000014105230ko.jpg
+v_lotion_1.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-701/
+v_lotion_2.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-445/
+v_itchy_1.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-701/
+v_itchy_2.mp4	Pixabay	Ian5152	https://pixabay.com/videos/id-275593/
+v_shower_1.mp4	Pixabay	socialsudo	https://pixabay.com/videos/id-27539/
+v_shower_2.mp4	Pixabay	jLasWilson	https://pixabay.com/videos/id-34091/
+v_squat_1.mp4	Pixabay	RainMeditateHub	https://pixabay.com/videos/id-293085/
+v_squat_2.mp4	Pixabay	RainMeditateHub	https://pixabay.com/videos/id-293082/
+v_pushup_1.mp4	Pixabay	choxyltd	https://pixabay.com/videos/id-189018/
+v_pushup_2.mp4	Pixabay	RainMeditateHub	https://pixabay.com/videos/id-293085/
+v_catcow_1.mp4	Pixabay	Ponnguyenduy	https://pixabay.com/videos/id-174452/
+v_catcow_2.mp4	Pixabay	NickyPe	https://pixabay.com/videos/id-186195/
+v_shoulder_1.mp4	Pixabay	Stuck1	https://pixabay.com/videos/id-32937/
+v_shoulder_2.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-445/
+v_lunge_1.mp4	Pixabay	RainMeditateHub	https://pixabay.com/videos/id-293085/
+v_lunge_2.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-445/
+v_situp_1.mp4	Pixabay	choxyltd	https://pixabay.com/videos/id-189018/
+v_situp_2.mp4	Pixabay	RainMeditateHub	https://pixabay.com/videos/id-293085/
+v_superman_1.mp4	Pixabay	PhamXuanThuy	https://pixabay.com/videos/id-64651/
+v_superman_2.mp4	Pixabay	Coverr-Free-Footage	https://pixabay.com/videos/id-10809/
+v_towel_1.mp4	Pixabay	Skylent	https://pixabay.com/videos/id-3967/
+v_towel_2.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-694/
