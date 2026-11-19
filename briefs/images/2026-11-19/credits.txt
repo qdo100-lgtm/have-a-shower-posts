@@ -1,0 +1,6 @@
+product_46cm_1.jpg	https://www.newswire.co.kr/newsRead.php?no=1047308
+product_46cmlg_1.jpg	https://lg.co.kr/media/release/28844
+product_sennok_1.jpg	https://cdnweb01.wikitree.co.kr/webdata/editor/202610/29/img_20261029094220_33ae5427.jpg
+product_sennoksp_1.png	https://www.specialtimes.co.kr/news/articleView.html?idxno=479727
+product_loe_1.jpg	https://www.allurekorea.com/2026/11/12/part-2-11%EC%9B%94-%EC%8B%A0%EC%83%81-%EC%87%BC%ED%95%91%EC%9D%80-%EB%84%88%EB%A1%9C-%EC%A0%95%ED%96%88%EB%8B%A4
+product_loegp_1.jpg	https://www.glowpick.com/products/153419
