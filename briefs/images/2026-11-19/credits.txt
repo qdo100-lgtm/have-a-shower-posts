@@ -4,3 +4,9 @@ product_sennok_1.jpg	https://cdnweb01.wikitree.co.kr/webdata/editor/202610/29/im
 product_sennoksp_1.png	https://www.specialtimes.co.kr/news/articleView.html?idxno=479727
 product_loe_1.jpg	https://www.allurekorea.com/2026/11/12/part-2-11%EC%9B%94-%EC%8B%A0%EC%83%81-%EC%87%BC%ED%95%91%EC%9D%80-%EB%84%88%EB%A1%9C-%EC%A0%95%ED%96%88%EB%8B%A4
 product_loegp_1.jpg	https://www.glowpick.com/products/153419
+product_snk_cmn_1.jpg	https://www.cmn.co.kr/sub/news/news_view.asp?news_idx=50631
+product_snk_kt_1.jpg	http://www.ktnews.com/news/articleView.html?idxno=149767
+product_snk_sp_1.png	https://www.specialtimes.co.kr/news/articleView.html?idxno=481798
+product_snk_rt_1.jpg	https://www.reviewtimes.co.kr/news/articleView.html?idxno=13202
+product_snk_na_1.jpg	https://www.newsa.co.kr/news/articleView.html?idxno=403552
+product_snk_ns_1.jpg	https://www.newstap.co.kr/news/articleView.html?idxno=337174
