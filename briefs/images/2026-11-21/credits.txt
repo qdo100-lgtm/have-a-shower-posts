@@ -63,3 +63,21 @@ bucket_1.jpg	Pixabay	_Mukula	https://pixabay.com/photos/fashion-portrait-studio-
 bucket_2.jpg	Pixabay	IndigoBunting	https://pixabay.com/photos/soap-home-made-soap-hand-milled-soap-8429699/
 bucket_3.jpg	Pixabay	Olga_Sk	https://pixabay.com/photos/spa-relaxation-sauna-hygiene-bath-10195371/
 product_gounbal_1.jpg	https://www.glowpick.com/products/152381
+nut_1.jpg	Pixabay	DavidClode	https://pixabay.com/photos/black-cockatoo-beak-ornithology-10381245/
+nut_2.jpg	Pixabay	Rbribella12	https://pixabay.com/photos/photography-close-up-nuts-almonds-10261114/
+nut_3.jpg	Pixabay	katrin_darkplace	https://pixabay.com/photos/cupcakes-bakery-products-food-7759743/
+seed_1.jpg	Pixabay	michnikkatarzyna	https://pixabay.com/photos/pumpkin-squash-vegetable-macro-6791721/
+seed_2.jpg	Pixabay	svetlanabar	https://pixabay.com/photos/bread-bakery-baked-flour-braided-5470535/
+seed_3.jpg	Pixabay	ohhlanla	https://pixabay.com/photos/cornflakes-cereal-snack-breakfast-5217339/
+cashew_1.jpg	Pixabay	StockSnap	https://pixabay.com/photos/salad-ingredients-food-vegetable-2592039/
+cashew_2.jpg	Pixabay	Tikovka1355	https://pixabay.com/photos/nuts-fruit-berries-nutrition-5705157/
+cashew_3.jpg	Pixabay	Be_Stasya	https://pixabay.com/photos/ice-cream-pistachios-nuts-dessert-4862623/
+towelwoman_1.jpg	Pixabay	Pexels	https://pixabay.com/photos/adult-annoyed-blur-burnout-1850268/
+towelwoman_2.jpg	Pixabay	OlyaLole	https://pixabay.com/photos/spa-woman-facial-beauty-salon-4481538/
+towelwoman_3.jpg	Pixabay	1899441	https://pixabay.com/photos/woman-lipstick-makeup-sunglasses-1255321/
+bathwoman_1.jpg	Pixabay	089photoshootings	https://pixabay.com/photos/woman-everyday-bathrobe-1979266/
+bathwoman_2.jpg	Pixabay	Icons8_team	https://pixabay.com/photos/morning-young-couple-woman-man-3436657/
+bathwoman_3.jpg	Pixabay	innamykytas	https://pixabay.com/photos/woman-model-bath-towel-bathtub-5515969/
+sleepy_1.jpg	Pixabay	blandinejoannic	https://pixabay.com/photos/breakfast-waffle-bed-morning-6526807/
+sleepy_2.jpg	Pixabay	Pexels	https://pixabay.com/photos/morning-bedroom-bed-door-girl-1850893/
+sleepy_3.jpg	Pixabay	Pexels	https://pixabay.com/photos/woman-bed-blanket-bedsheet-1867923/
