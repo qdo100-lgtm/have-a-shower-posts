@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>음식</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px; display: flex; flex-direction: column; gap: 36px; background: #F6F2E8; color: #17191C; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; word-break: keep-all; overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; font-weight: 700; letter-spacing: 0.12em">
+<div style="color: {{accent}}">HAVE A SHOWER</div>
+<div style="color: #5F646B; letter-spacing: 0.04em">04 / 05</div>
+</div>
+<h2 style="margin: 0; font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 62px; font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; white-space: pre-line">알약이 싫다면
+<span style="color: {{accent}}">먹는 걸로</span> 채워요</h2>
+
+<div style="display: flex; gap: 18px"><div style="flex: 1; display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; border-radius: 20px; padding: 14px 14px 22px">
+<div style="height: 250px; border-radius: 14px; overflow: hidden; background: #F1ECE0; flex-shrink: 0"><img src="/_blob/c1b7d17343c9a99559caa3f022bcd0c9" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block"></div>
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 33px; font-weight: 800; padding: 0 8px">견과류</div>
+<div style="font-size: 25px; line-height: 1.4; color: #5F646B; padding: 0 8px">아몬드·호두 한 줌</div>
+</div><div style="flex: 1; display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; border-radius: 20px; padding: 14px 14px 22px">
+<div style="height: 250px; border-radius: 14px; overflow: hidden; background: #F1ECE0; flex-shrink: 0"><img src="/_blob/cfe759162ea5c7e33011cd01488acd9c" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block"></div>
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 33px; font-weight: 800; padding: 0 8px">씨앗</div>
+<div style="font-size: 25px; line-height: 1.4; color: #5F646B; padding: 0 8px">호박씨·해바라기씨</div>
+</div></div>
+<div style="display: flex; gap: 18px"><div style="flex: 1; display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; border-radius: 20px; padding: 14px 14px 22px">
+<div style="height: 250px; border-radius: 14px; overflow: hidden; background: #F1ECE0; flex-shrink: 0"><img src="/_blob/8373f6f2937d271710f21a2de8d8d70a" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block"></div>
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 33px; font-weight: 800; padding: 0 8px">시금치</div>
+<div style="font-size: 25px; line-height: 1.4; color: #5F646B; padding: 0 8px">초록 잎채소</div>
+</div><div style="flex: 1; display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; border-radius: 20px; padding: 14px 14px 22px">
+<div style="height: 250px; border-radius: 14px; overflow: hidden; background: #F1ECE0; flex-shrink: 0"><img src="/_blob/6a5cf6c53acb664fdd81b5f7d110ebe4" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block"></div>
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 33px; font-weight: 800; padding: 0 8px">다크초콜릿</div>
+<div style="font-size: 25px; line-height: 1.4; color: #5F646B; padding: 0 8px">카카오 높은 걸로</div>
+</div></div>
+<div style="font-size: 26px; line-height: 1.45; color: #5F646B">견과류·씨앗·초록 채소·통곡물에 마그네슘이 많아요(미국 NIH 영양보충제국)</div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; gap: 24px; font-size: 23px; color: #5F646B">
+<div>@have.a.shower</div>
+<div style="text-align: right">사진: Pixabay · 출처: NIH Office of Dietary Supplements</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1B3FEF","options":["#1B3FEF","#8A4B3C","#3D4F8A","#17191C"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1B3FEF' };
+}
+}
+</script>
+</body>
+</html>

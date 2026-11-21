@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>등밀이 기계</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px; display: flex; flex-direction: column; gap: 36px; background: #F6F2E8; color: #17191C; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; word-break: keep-all; overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; font-weight: 700; letter-spacing: 0.12em">
+<div style="color: {{accent}}">HAVE A SHOWER</div>
+<div style="color: #5F646B; letter-spacing: 0.04em">04 / 07</div>
+</div>
+<h2 style="margin: 0; font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 62px; font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; white-space: pre-line">경상도에만 있다는
+<span style="color: {{accent}}">자동 등밀이</span> 기계</h2>
+
+<div style="height: 300px; border-radius: 22px; overflow: hidden; background: #FFFFFF; flex-shrink: 0"><img src="/_blob/833b0d3171af20c8ad2095fe94664a84" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; display: block"></div>
+<div style="display: flex; flex-direction: column; gap: 20px"><div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="width: 10px; height: 10px; border-radius: 5px; margin-top: 13px; flex-shrink: 0; background: {{accent}}"></div>
+<div style="font-size: 31px; line-height: 1.5">탕 안에 있는 <b>무료</b> 기계 – 등도 발도 밀 수 있어요</div>
+</div><div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="width: 10px; height: 10px; border-radius: 5px; margin-top: 13px; flex-shrink: 0; background: {{accent}}"></div>
+<div style="font-size: 31px; line-height: 1.5">때타월에 비누 바르고 시작 버튼 → 돌아가는 타월에 몸을 대는 방식</div>
+</div><div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="width: 10px; height: 10px; border-radius: 5px; margin-top: 13px; flex-shrink: 0; background: {{accent}}"></div>
+<div style="font-size: 31px; line-height: 1.5">이지혜: “의자가 붙어있네 심지어” → 해보더니 등이 <b>발갛게</b></div>
+</div></div>
+<div style="border-left: 8px solid {{accent}}; padding: 8px 0 8px 30px; display: flex; flex-direction: column; gap: 10px"><div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 40px; font-weight: 800; line-height: 1.4">“너무 아파요. 사람 손길이 좋아요”</div><div style="font-size: 26px; color: #5F646B">이지혜 – 자동 등밀이 기계 써보고</div></div>
+<div style="background: #FFFFFF; border-radius: 18px; padding: 26px 32px; font-size: 29px; line-height: 1.5">💡 세게 민다고 더 깨끗한 건 아니에요. <b>빨개지면 멈추고</b>, 나와서 바로 보습!</div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; gap: 24px; font-size: 23px; color: #5F646B">
+<div>@have.a.shower</div>
+<div style="text-align: right">출처: 유튜브 ‘밉지않은 관종언니’(2026.11.19) · 인사이트(11.20) · MK스포츠·OSEN(11.19)</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1B3FEF","options":["#1B3FEF","#8A4B3C","#3D4F8A","#17191C"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1B3FEF' };
+}
+}
+</script>
+</body>
+</html>
