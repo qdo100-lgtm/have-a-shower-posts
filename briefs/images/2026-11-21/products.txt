@@ -1,5 +1,3 @@
-mag | https://cdn.daisomall.co.kr/file/resize/PD/20250408/banner/300/DZz3h5SxY2J2FqaEB9qZ600000128_00_00DZz3h5SxY2J2FqaEB9qZ.png
-mag | https://cdnweb01.wikitree.co.kr/webdata/editor/202611/15/img_20261115160637_eeb6a3a4.jpg
-drbear | https://img.tf.co.kr/article/home/2025/02/24/202591331740356320.jpg
-gounbal | https://glowpick.com/products/152381/expression?expressionId=2
-gounbal | https://m.ssg.com/item/itemView.ssg?itemId=1000671513550
+gounbal | https://www.11st.co.kr/products/2866308204
+gounbal | https://www.11st.co.kr/products/2318746422
+gounbal | https://www.glowpick.com/products/152381
