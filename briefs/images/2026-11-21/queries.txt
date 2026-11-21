@@ -1,11 +1,7 @@
-# 2차: 잠자는 사람·음식·목욕 (이름 | 영어 검색어)
-asleep | woman sleeping eyes closed pillow
-asleep2 | sleeping woman white bed
-asleepm | man sleeping pillow
-almond | almonds
-pumpkin | pumpkin seeds
-spinachleaf | fresh spinach leaves
-banana | bananas
-spa | woman spa towel head relaxing
-cucumber | cucumber slices face mask woman
-bucket | bath bucket wooden stool towel
+# 3차 (이름 | 영어 검색어)
+nut | almonds nuts close up
+seed | pumpkin seeds close up
+cashew | cashew nuts bowl
+towelwoman | woman towel on head smiling
+bathwoman | woman bathrobe smiling bathroom
+sleepy | woman sleeping in bed morning
