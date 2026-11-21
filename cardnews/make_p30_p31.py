@@ -17,7 +17,7 @@ PICK = {
     'cover30': 'asleep2_1.jpg', 'sleep30': 'asleep_1.jpg', 'mag': 'product_mag_2.jpg', 'mag_box': 'product_mag_1.webp',
     'drbear': 'product_drbear_1.jpg', 'almond': 'nut_2.jpg', 'pumpkin': 'cashew_2.jpg',
     'spinach': 'spinachleaf_3.jpg', 'choco': 'spinach_3.jpg',
-    'cover31': 'bathwoman_1.jpg', 'bath': 'bucket_3.jpg', 'cucumber': 'cucumber_1.jpg', 'salt': 'salt_3.jpg',
+    'cover31': 'leejihye_ig.png', 'robe': 'bathwoman_1.jpg', 'bath': 'bucket_3.jpg', 'cucumber': 'cucumber_1.jpg', 'salt': 'salt_3.jpg',
     'towel': 'bathhouse_3.jpg', 'foot': 'foot_2.jpg', 'cream': 'scrub_1.jpg', 'gounbal': 'product_gounbal_1.jpg',
     'bucket': 'bucket_1.jpg',
 }
@@ -121,7 +121,7 @@ C31 = {
     'C': (f'“여기서 {yl("명인")}을\n만났다”', '이지혜가 다시 가겠다고 한 경주 목욕탕'),
 }
 t, s = C31[pick.get('31', 'A')]
-write('P31-1-Cover.dc.html', '이지혜 목욕탕 커버', cover3(31, IMG.get('cover31', ''), '50% 30%', '셀럽 루틴', t, s, '사진: Pixabay'))
+write('P31-1-Cover.dc.html', '이지혜 목욕탕 커버', cover3(31, IMG.get('cover31', ''), '50% 0%', '셀럽 루틴', t, s, '사진: 이지혜 인스타그램'))
 
 write('P31-2-Where.dc.html', '어디', page(2, 7, f'세신 받으세요?\n{acc("혼자")} 미세요?', f'''
 {photo('bath', 380, '50% 55%')}
@@ -149,9 +149,9 @@ write('P31-5-Kit.dc.html', '목욕 꿀템', page(5, 7, f'제작진과 꺼낸\n{a
 {card(kit)}''', '사진: Pixabay · 제품 사진은 참고용 · ' + S31.replace('출처: ', '')))
 
 write('P31-6-Order.dc.html', '순서', page(6, 7, f'이지혜처럼\n{acc("목욕탕 200%")} 즐기기', f'''
+{photo('robe', 220, '50% 20%')}
 {steprows([('1', '화장 지우고 샤워 먼저', '탕에 들어가기 전에 – 이지혜도 이것부터'), ('2', '탕에서 몸 불리기', '“야, 진짜 시원해!”'),
-           ('3', '세신 → 마사지 → 오이 팩', '빨개지면 멈추기'), ('4', '나와서 바로 보습', '뒤꿈치는 크림 한 번 더')], 36)}
-<div style="font-size: 27px; line-height: 1.5; color: #5F646B">보너스: 목욕 끝나고 경주 명물 ‘안강 불고기’ – “사우나에서 안강 불고기 먹는 게 화룡점정”</div>''', S31))
+           ('3', '세신 → 마사지 → 오이 팩', '빨개지면 멈추기'), ('4', '나와서 바로 보습', '뒤꿈치는 크림 한 번 더')], 34)}''', S31))
 
 write('P31-7-Closing.dc.html', '마무리', closing('주말 목욕탕 체크리스트', crow([
     '입장 전: 화장 지우고 샤워부터',
