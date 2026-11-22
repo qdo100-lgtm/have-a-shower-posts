@@ -36,6 +36,15 @@
 - 11/15(일) 대표 결정: 하루 게시 쉬고 점검·재정비. 대표가 인스타 앱 '계정 상태'(추천 가능 여부) 확인 예정.
 
 ## 4. 카드뉴스 만드는 법
+### ★ 2026-11-22부터: insta-cardnews 스킬로 만든다 (대표 결정)
+- 계정 스킬 `insta-cardnews`(세션에 따라 `anthropic-skills:insta-cardnews`)를 불러서 그 절차(브랜드 키트 → 아트 디렉션 → deck.html → render.py 자동 검수 → 캡션)대로 만든다.
+- **'같은 스타일로' 모드로 시작**: 우리 스타일이 `cardnews/my-style/have-a-shower/`(template.html·style.md)에 저장돼 있음 → `save_style.py load have-a-shower --to work --root cardnews/my-style` 후 문구·사진만 바꾸기. 코너별 포인트 색은 style.md 참고.
+- 렌더: `python3 <스킬>/scripts/render.py work/deck.html --out work/out --ratio 4:5` (게시용 1080x1350). ERROR는 다 고치고 contact.png를 직접 보고 확인.
+- 사진: 스킬의 스톡 사이트(Openverse)는 이 환경에서 막힘 → 아래 '사진 받기'(Pixabay 워크플로)로 받아 work/assets에 복사.
+- 게시 폴더로 옮길 때 PNG → JPEG 변환해서 `posts/noNN_주제/01.jpg…`에.
+- 샘플: `cardnews/samples_1122/`(비앤디 엉덩이 크림 6장 · 일본 꿀잠 입욕제 7장).
+- 아래 '디자인 원본(캔버스)'·'템플릿' 방식은 **이전 방식**(참고용).
+
 ### 디자인 원본(캔버스)
 - Design 아티팩트: https://claude.ai/artifact/E2d11ZrLhGmAyDiD53Tfz2 (`project/*.dc.html` + `project/canvas.json`)
 - 수정 전에 Artifact `read`(path=project/파일명)로 최신본을 받고, 그 파일을 고쳐서 같은 url로 publish(root = 받은 폴더). 새 세트는 canvas.json `boards`에 1160px 간격, 행마다 1800px 아래로 추가.
