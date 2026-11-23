@@ -45,7 +45,7 @@ def main():
             continue
         name, url = [s.strip() for s in line.split("|", 1)]
         try:
-            img = url if IMG.search(url) else og_image(url)
+            img = url if (IMG.search(url) or "images.unsplash.com/" in url) else og_image(url)
             if not img:
                 print(f"{name}: 대표 이미지를 못 찾음 {url}")
                 continue

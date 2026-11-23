@@ -1,13 +1,14 @@
-# 11/23 내용 맞춤 사진 – Unsplash 무료 사진(페이지 주소 → 대표 이미지)
-cleaning | https://unsplash.com/photos/a-woman-mops-a-bright-modern-living-room-floor-2NcTLdFHpH8
-foamroller | https://unsplash.com/photos/person-in-black-pants-and-white-shirt-zlY2woZT_RA
-foamroller | https://unsplash.com/photos/woman-in-white-top-lies-on-round-surface-2Y8_r7O7cRk
-massager | https://unsplash.com/photos/vIb5HzilzBs
-scalpmassager | https://unsplash.com/photos/black-and-white-scalp-massager-with-silicone-bristles-BKXCRBpT2Y4
-tools | https://unsplash.com/photos/various-wooden-massage-tools-close-up-hYIZOhaxELY
-facemassager | https://unsplash.com/photos/white-face-massager-j1WYUNgLbOk
-pillsdark | https://unsplash.com/photos/a-hand-holding-two-pills-in-the-dark-t8PrBszEMps
-bottle | https://unsplash.com/photos/colorful-pills-spilling-from-orange-bottle-w8p9cQDLX7I
-awake | https://unsplash.com/photos/a-woman-in-a-white-shirt-lies-on-a-bed-Wm0SEDjE05s
-awake | https://unsplash.com/photos/a-woman-sitting-on-a-bed-holding-a-pillow-jIKXdqKILgk
-lamp | https://unsplash.com/photos/table-lamp-turned-on-near-bed-DE9MM2voqKc
+# 11/23 내용 맞춤 사진 – Unsplash 무료 사진(이미지 주소 직접). 작가: 아래 메모
+cleaning | https://images.unsplash.com/photo-1758273238415-01ec03d9ef27?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+foamroller | https://images.unsplash.com/photo-1591741535585-9c4f52b3f13f?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+foamroller | https://images.unsplash.com/photo-1763701504130-15cc89bc47ff?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+massager | https://images.unsplash.com/photo-1770653927355-2ba81c1522df?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+scalpmassager | https://images.unsplash.com/photo-1767953829433-1e405b6889de?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+tools | https://images.unsplash.com/photo-1767043088777-1884c2ef6c97?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+facemassager | https://images.unsplash.com/photo-1578747763484-51b21a33e4fa?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+pillsdark | https://images.unsplash.com/photo-1639677425025-e4f43c990156?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+bottle | https://images.unsplash.com/photo-1628771065518-0d82f1938462?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+awake | https://images.unsplash.com/photo-1768064772500-8d4665c0d041?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+awake | https://images.unsplash.com/photo-1721815731590-d4aae3a7fc9f?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+lamp | https://images.unsplash.com/photo-1552858725-2758b5fb1286?fm=jpg\&q=85\&w=1600\&auto=format\&fit=crop
+# 작가: cleaning Vitaly Gariev / foamroller Andrew Valdivia, Roman Manshin / massager Julius Toltesi / scalpmassager Kyle Yann / tools Eric Prouzet / facemassager Content Pixie / pillsdark Cosmin Ursea / bottle Towfiqu barbhuiya / awake Polina Khaiko, Solving Healthcare / lamp Jp Valery
