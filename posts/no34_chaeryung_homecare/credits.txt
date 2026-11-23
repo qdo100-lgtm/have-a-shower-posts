@@ -1,4 +1,4 @@
-01 표지	대표 제공 (출처 확인 필요)
+01 표지	대표 제공 (출처 표기 안 함 – 대표 결정)
 02 cleaning	Unsplash	Vitaly Gariev	https://unsplash.com/photos/2NcTLdFHpH8
 03 scalpmassager	Unsplash	Kyle Yann	https://unsplash.com/photos/BKXCRBpT2Y4
 04 foamroller	Unsplash	Andrew Valdivia	https://unsplash.com/photos/zlY2woZT_RA
