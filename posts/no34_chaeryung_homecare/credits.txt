@@ -1,5 +1,5 @@
-backmassage_3.jpg	Pixabay	graceie	https://pixabay.com/photos/massage-content-calm-peaceful-650879/
-sauna_3.jpg	Pixabay	VirgoStudio	https://pixabay.com/photos/sauna-wellness-spa-relaxation-10118836/
-scalp_1.jpg	Pixabay	guvo59	https://pixabay.com/photos/head-massage-head-face-relaxation-4073232/
-sofa_1.jpg	Pixabay	yousafbhutta	https://pixabay.com/photos/dog-pet-woman-watching-tv-7025908/
-towel_2.jpg	Pixabay	TengRao	https://pixabay.com/photos/towel-stack-of-towels-frame-photo-2992610/
+01 표지	대표 제공 (출처 확인 필요)
+02 cleaning	Unsplash	Vitaly Gariev	https://unsplash.com/photos/2NcTLdFHpH8
+03 scalpmassager	Unsplash	Kyle Yann	https://unsplash.com/photos/BKXCRBpT2Y4
+04 foamroller	Unsplash	Andrew Valdivia	https://unsplash.com/photos/zlY2woZT_RA
+05 sauna_3	Pixabay	VirgoStudio	https://pixabay.com/photos/sauna-wellness-spa-relaxation-10118836/

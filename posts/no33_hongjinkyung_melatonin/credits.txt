@@ -1,4 +1,5 @@
-alarm_3.jpg	Pixabay	foto-retusz	https://pixabay.com/photos/clock-time-watch-business-minutes-5084284/
-pills_1.jpg	Pixabay	PublicDomainPictures	https://pixabay.com/photos/pills-hand-medication-addiction-14550/
-pills_2.jpg	Pixabay	frolicsomepl	https://pixabay.com/photos/medicines-bow-cold-dose-illness-1006815/
-supplement_2.jpg	Pixabay	Efraimstochter	https://pixabay.com/photos/nutritional-supplements-pills-3512184/
+01 표지	대표 제공 (출처 확인 필요)
+02 pillsdark	Unsplash	Cosmin Ursea	https://unsplash.com/photos/t8PrBszEMps
+03 awake	Unsplash	Polina Khaiko	https://unsplash.com/photos/Wm0SEDjE05s
+04 bottle	Unsplash	Towfiqu barbhuiya	https://unsplash.com/photos/w8p9cQDLX7I
+05 supplement_2	Pixabay	Efraimstochter	https://pixabay.com/photos/nutritional-supplements-pills-3512184/
