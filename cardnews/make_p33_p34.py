@@ -35,6 +35,12 @@ for k, f in PICK.items():
     IMG[k] = '/_blob/' + h
 pick = {a[:2]: a[2:] for a in sys.argv[1:]}
 TAG['팩트 체크'] = '#7FD4FF'
+import re as _re
+_cover3 = cover3
+
+
+def cover3(*a, **k):  # 11/23 대표: 코너 이름표(팩트 체크·셀럽 루틴) 빼기
+    return _re.sub(r'<div style="position: absolute; left: 72px; bottom: 470px;[^>]*>[^<]*</div>\n', '', _cover3(*a, **k))
 
 # ───────── No.33 홍진경 멜라토닌 (6장) ─────────
 S33 = '출처: 유튜브 ‘공부왕찐천재 홍진경’(2026.11.19) · iMBC 연예(11.20)'
