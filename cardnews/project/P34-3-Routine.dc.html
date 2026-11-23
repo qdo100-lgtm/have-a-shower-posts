@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>TV 보며</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px; display: flex; flex-direction: column; gap: 36px; background: #F6F2E8; color: #17191C; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; word-break: keep-all; overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; font-weight: 700; letter-spacing: 0.12em">
+<div style="color: {{accent}}">HAVE A SHOWER</div>
+<div style="color: #5F646B; letter-spacing: 0.04em">03 / 06</div>
+</div>
+<h2 style="margin: 0; font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 62px; font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; white-space: pre-line">TV 보면서 하는
+<span style="color: {{accent}}">4가지</span></h2>
+
+<div style="display: flex; flex-direction: column; gap: 18px"><div style="display: flex; align-items: center; gap: 28px; background: #FFFFFF; border-radius: 20px; padding: 26px 36px">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 54px; font-weight: 800; color: {{accent}}; width: 50px; flex-shrink: 0">1</div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 800">두피 괄사</div><div style="font-size: 28px; line-height: 1.4; color: #5F646B">드라마 볼 때</div></div>
+</div><div style="display: flex; align-items: center; gap: 28px; background: #FFFFFF; border-radius: 20px; padding: 26px 36px">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 54px; font-weight: 800; color: {{accent}}; width: 50px; flex-shrink: 0">2</div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 800">등 마사지기</div><div style="font-size: 28px; line-height: 1.4; color: #5F646B">드라마 볼 때</div></div>
+</div><div style="display: flex; align-items: center; gap: 28px; background: #FFFFFF; border-radius: 20px; padding: 26px 36px">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 54px; font-weight: 800; color: {{accent}}; width: 50px; flex-shrink: 0">3</div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 800">종아리 폼롤러</div><div style="font-size: 28px; line-height: 1.4; color: #5F646B">야구 볼 때</div></div>
+</div><div style="display: flex; align-items: center; gap: 28px; background: #FFFFFF; border-radius: 20px; padding: 26px 36px">
+<div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 54px; font-weight: 800; color: {{accent}}; width: 50px; flex-shrink: 0">4</div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 38px; font-weight: 800">목 스트레칭 봉</div><div style="font-size: 28px; line-height: 1.4; color: #5F646B">야구 볼 때</div></div>
+</div></div>
+<div style="height: 200px; border-radius: 22px; overflow: hidden; background: #FFFFFF; flex-shrink: 0"><img src="/_blob/b42a47deeec29e839e41af2711377535" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; display: block"></div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; gap: 24px; font-size: 23px; color: #5F646B">
+<div>@have.a.shower</div>
+<div style="text-align: right">사진: Unsplash · 방송 속 브랜드는 미공개 · 출처: MBC ‘전지적 참견 시점’ 425회(2026.11.21) · 톱스타뉴스(11.23)</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1B3FEF","options":["#1B3FEF","#8A4B3C","#3D4F8A","#17191C"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1B3FEF' };
+}
+}
+</script>
+</body>
+</html>

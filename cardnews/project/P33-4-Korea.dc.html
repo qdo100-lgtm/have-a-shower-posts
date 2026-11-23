@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>한국에선</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;800&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit}
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px; display: flex; flex-direction: column; gap: 36px; background: #F6F2E8; color: #17191C; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; word-break: keep-all; overflow: hidden">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 26px; font-weight: 700; letter-spacing: 0.12em">
+<div style="color: {{accent}}">HAVE A SHOWER</div>
+<div style="color: #5F646B; letter-spacing: 0.04em">04 / 06</div>
+</div>
+<h2 style="margin: 0; font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; font-size: 62px; font-weight: 800; line-height: 1.25; letter-spacing: -0.02em; white-space: pre-line">한국에선
+<span style="color: {{accent}}">처방받는 약</span>이에요</h2>
+
+<div style="height: 360px; border-radius: 22px; overflow: hidden; background: #FFFFFF; flex-shrink: 0"><img src="/_blob/faed640084a7a353f40ea4e369d5364c" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; display: block"></div>
+<div style="display: flex; flex-direction: column; gap: 20px"><div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="width: 10px; height: 10px; border-radius: 5px; margin-top: 13px; flex-shrink: 0; background: {{accent}}"></div>
+<div style="font-size: 31px; line-height: 1.5">식약처: “멜라토닌은 국내에서 <b>전문의약품</b>으로 허가돼 있는 성분이다.”</div>
+</div><div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="width: 10px; height: 10px; border-radius: 5px; margin-top: 13px; flex-shrink: 0; background: {{accent}}"></div>
+<div style="font-size: 31px; line-height: 1.5">올해 식약처가 산 해외직구 수면 제품 11개 중 <b>9개</b>에서 멜라토닌 검출</div>
+</div><div style="display: flex; gap: 18px; align-items: flex-start">
+<div style="width: 10px; height: 10px; border-radius: 5px; margin-top: 13px; flex-shrink: 0; background: {{accent}}"></div>
+<div style="font-size: 31px; line-height: 1.5">“고함량을 장기간 복용할 경우 의존성과 함께 두통, 어지러움, 우울 등 부작용이 나타날 수 있다.”</div>
+</div></div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; gap: 24px; font-size: 23px; color: #5F646B">
+<div>@have.a.shower</div>
+<div style="text-align: right">사진: Unsplash · 출처: 뉴시스(2026.7.2, 식약처 발표)</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1B3FEF","options":["#1B3FEF","#8A4B3C","#3D4F8A","#17191C"]},"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1B3FEF' };
+}
+}
+</script>
+</body>
+</html>

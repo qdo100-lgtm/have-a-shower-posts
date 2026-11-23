@@ -38,7 +38,12 @@
 - 11/15(일) 대표 결정: 하루 게시 쉬고 점검·재정비. 대표가 인스타 앱 '계정 상태'(추천 가능 여부) 확인 예정.
 
 ## 4. 카드뉴스 만드는 법
-### ★ 2026-11-22부터: insta-cardnews 스킬로 만든다 (대표 결정)
+### ★ 2026-11-23 대표 결정: 글씨 모양·룩앤필은 **이전 스타일(No.31까지)**이 낫다 → 다시 `make_pNN.py` 방식
+- 크림 바탕 + 굵은 고딕 제목(강조는 코발트), 표지 v3(`cover3`: 사진 전체 + 코너 이름표 + 노란 강조 + No.), 페이지 번호 `0N / 0M`, 코발트 마무리 장.
+- 최신 예: `cardnews/make_p33_p34.py`(No.33 홍진경 · No.34 채령). 이걸 복사해 문구·사진만 바꾸면 가장 빠름. 실행 → `python3 cardnews/render_png.py <출력폴더> P33-1-Cover.dc.html …` → JPEG로 `posts/noNN_주제/`.
+- 아래 insta-cardnews(네이비·명조) 방식은 11/22~23 시험 후 **보류**.
+
+### (보류) 2026-11-22: insta-cardnews 스킬로 만든다
 - 계정 스킬 `insta-cardnews`(세션에 따라 `anthropic-skills:insta-cardnews`)를 불러서 그 절차(브랜드 키트 → 아트 디렉션 → deck.html → render.py 자동 검수 → 캡션)대로 만든다.
 - **'같은 스타일로' 모드로 시작**: 우리 스타일이 `cardnews/my-style/have-a-shower/`(template.html·style.md)에 저장돼 있음 → `save_style.py load have-a-shower --to work --root cardnews/my-style` 후 문구·사진만 바꾸기. 코너별 포인트 색은 style.md 참고.
 - 렌더: `python3 <스킬>/scripts/render.py work/deck.html --out work/out --ratio 4:5` (게시용 1080x1350). ERROR는 다 고치고 contact.png를 직접 보고 확인.
