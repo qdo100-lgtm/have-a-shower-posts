@@ -41,11 +41,13 @@ def search_pexels(query, key):
 def main():
     pixabay = os.environ.get("PIXABAY_KEY", "").strip()
     pexels = os.environ.get("PEXELS_KEY", "").strip()
+    sites = []
     if pixabay:
-        site, search, key = "Pixabay", search_pixabay, pixabay
-    elif pexels:
-        site, search, key = "Pexels", search_pexels, pexels
-    else:
+        sites.append(("Pixabay", search_pixabay, pixabay, ""))
+    if pexels:
+        # 2026-11-23: Pixabay만으로는 내용과 안 맞는 사진이 많아 Pexels도 같이 받음 (파일명 name_p1.jpg …)
+        sites.append(("Pexels", search_pexels, pexels, "p"))
+    if not sites:
         print("사진 사이트 키가 아직 없어요. 저장소 Settings → Secrets 에 PIXABAY_KEY 를 넣어 주세요. (이번엔 건너뜀)")
         return
     qfile = Path(sys.argv[1])
@@ -56,14 +58,19 @@ def main():
         if not line or "|" not in line:
             continue
         name, query = [s.strip() for s in line.split("|", 1)]
-        results = search(query, key)
-        print(f"{name}: '{query}' → {len(results)}장 ({site})")
-        for i, (url, author, page, headers) in enumerate(results, 1):
-            out = folder / f"{name}_{i}.jpg"
-            if out.exists():
+        for site, search, key, prefix in sites:
+            try:
+                results = search(query, key)
+            except Exception as e:
+                print(f"{name}: '{query}' {site} 실패 – {e}")
                 continue
-            out.write_bytes(get(url, headers))
-            credits.append(f"{out.name}\t{site}\t{author}\t{page}")
+            print(f"{name}: '{query}' → {len(results)}장 ({site})")
+            for i, (url, author, page, headers) in enumerate(results, 1):
+                out = folder / f"{name}_{prefix}{i}.jpg"
+                if out.exists():
+                    continue
+                out.write_bytes(get(url, headers))
+                credits.append(f"{out.name}\t{site}\t{author}\t{page}")
     if credits:
         with open(folder / "credits.txt", "a", encoding="utf-8") as f:
             f.write("\n".join(credits) + "\n")
