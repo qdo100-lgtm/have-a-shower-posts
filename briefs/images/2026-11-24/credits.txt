@@ -6,3 +6,21 @@ product_oil_1.jpg	https://images.unsplash.com/photo-1722933375700-e297a7996265?f
 product_oil_2.jpg	https://images.unsplash.com/photo-1637523783035-bcda83e8bff7?fm=jpg&q=85&w=1600
 product_lotion_1.jpg	https://images.unsplash.com/photo-1586220742613-b731f66f7743?fm=jpg&q=85&w=1600
 product_lotion_2.jpg	https://images.unsplash.com/photo-1599847954335-d7c7ca35f6a7?fm=jpg&q=85&w=1600
+v_legraise_1.mp4	Pixabay	RainMeditateHub	https://pixabay.com/videos/id-293085/
+v_legraise_2.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-445/
+v_legraise_3.mp4	Pixabay	Engin_Akyurt	https://pixabay.com/videos/id-122440/
+v_legraise_mk.mp4	direct		https://assets.mixkit.co/videos/5355/5355-720.mp4
+v_crisscross_1.mp4	Pixabay	ukesh012h	https://pixabay.com/videos/id-147560/
+v_crisscross_2.mp4	Pixabay	KIMDAEJEUNG	https://pixabay.com/videos/id-116351/
+v_crisscross_3.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-7251/
+v_bridge_1.mp4	Pixabay	RainMeditateHub	https://pixabay.com/videos/id-293085/
+v_bridge_2.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-445/
+v_bridge_3.mp4	Pixabay	Kanenori	https://pixabay.com/videos/id-197564/
+v_sideplank_1.mp4	Pixabay	Cyril974R	https://pixabay.com/videos/id-231754/
+v_sideplank_2.mp4	Pixabay	ChristianBodhi	https://pixabay.com/videos/id-98661/
+v_sideplank_3.mp4	Pixabay	Cyril974R	https://pixabay.com/videos/id-231752/
+v_sideplank_mk.mp4	direct		https://assets.mixkit.co/videos/739/739-720.mp4
+v_plank_1.mp4	Pixabay	RainMeditateHub	https://pixabay.com/videos/id-293085/
+v_plank_2.mp4	Pixabay	Vimeo-Free-Videos	https://pixabay.com/videos/id-445/
+v_plank_3.mp4	Pixabay	Amorn_mimi	https://pixabay.com/videos/id-124251/
+v_plank_mk.mp4	direct		https://assets.mixkit.co/videos/36813/36813-720.mp4
