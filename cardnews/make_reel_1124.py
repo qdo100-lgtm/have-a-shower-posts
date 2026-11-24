@@ -13,7 +13,7 @@ CO, CR, Y, INK = M.CO, M.CR, M.Y, M.INK
 W, H = M.W, M.H
 BOX_W, BOX_H, BOX_X, BOX_Y = 900, 760, 90, 300
 SRC = '카즈하 루틴 · 유튜브 ‘Allure’(2026.11.18)'
-PHOTO_CREDIT = os.environ.get('KAZUHA_CREDIT', '사진: [사진 출처]')
+PHOTO_CREDIT = os.environ.get('KAZUHA_CREDIT', '')
 
 CLIPS = {  # 동작: (파일, 시작초, 가로중심, 세로중심)
     1: ('2026-11-24c/v_pxlegraise1.mp4', 1.0, 0.5, 0.9),
